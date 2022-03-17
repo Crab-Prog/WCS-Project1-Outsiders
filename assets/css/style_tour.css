@@ -36,6 +36,7 @@ body{
 .tour_presentation, .tour_dates, .merch_clothing, .merch_music{
     padding : 1em;
 }
+
 h1{
     font-size: 2.5em;
 }
@@ -66,7 +67,7 @@ h1{
  }
 
 .merch_clothing div h3, .merch_music div h3{
-    padding : 0.4em;
+    padding : 0.2em;
     font-size: 1.3em;
 }
 
@@ -79,7 +80,7 @@ h1{
     
 @media screen and (min-width: 768px){ /* limite à partir de laquelle s'applique et au delà*/
    
-    .tour_dates,.tour_dates div,.merch_music, .merch_clothing{
+    .tour_dates,.tour_dates div,.merch_clothing,.merch_music{
         flex-direction: row;
     }    
     
@@ -94,8 +95,9 @@ h1{
     }
 
     .merch_clothing div, .merch_music div{
-        padding: 2em;
+        padding: 1em;
         font-size: 1em;
+        outline : 2px solid red;
     }
 
 
