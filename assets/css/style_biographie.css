@@ -1,0 +1,88 @@
+
+/* CODE COULEUR :
+
+GRIS HAMBURGER : #4c4c4c
+GRIS NAVBAR / FOOTER : #1c1c1c
+JAUNE : #e6e458
+
+Point de rupture : 768 px */
+
+
+
+
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+}
+body{
+    background-image: url('../img/background.jpg');
+    background-size: cover;
+    background-position-x: center;
+    background-attachment: fixed;
+}
+.bioNavBar{
+   /* border: 1px solid; */
+   display: flex;
+   justify-content: space-between;
+   /* background-color: #1c1c1c; */
+}
+body > header > nav > i{
+    color: white;
+    font-size: 30px;
+    /* position: fixed; */
+    margin: 1rem;
+}
+
+.bioNavLogo{
+    width: 34%;
+    height: 34%;
+}
+body > header > nav > ul > li:nth-child(n) > a{
+    text-decoration: none;
+    color: white;
+    
+}
+body > header > nav > ul > li:nth-child(n){
+    list-style: none ;
+}
+.bioGrp1{
+    width: 7%;
+    height: 7%;
+}
+.bioGrp{
+    width: 7%;
+    height: 7%;
+}
+body > section:nth-child(3){
+    background-image: url(https://placedog.net/500);
+    background-size: cover;
+    background-position-x: center;
+    background-attachment: fixed;
+    
+}
+body > section:nth-child(2) > h1{
+    margin-top: 10rem;
+    color: white;
+    margin-bottom: 1rem;
+}
+body > section:nth-child(n) > div{
+    width: 80%;
+}
+body > section:nth-child(n) > div > p{
+    margin-bottom: 19rem;
+    color: white;
+    text-align: center;
+}
+body > section:nth-child(n) > h2{
+    padding-top: 10rem;
+    color: white;
+    margin-bottom: 1rem;
+}
+body > section:nth-child(n){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
