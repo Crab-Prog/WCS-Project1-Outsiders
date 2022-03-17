@@ -49,12 +49,15 @@ body{
 }
 
 h1{
-    font-size: 2.5em;
+    font-size: 4em;
+    text-align: center;
 }
 
 .tour_presentation h2, .outsiders_merch h2{
     padding : 0.8em;
-    font-weight: 700;
+    font-size: 2em;
+    font-weight: 900;
+    text-align: center;
 }
 
 .tour_presentation p{
@@ -75,6 +78,7 @@ h1{
 
  .tour_dates div h3,input{
     padding : 0.4em;
+    text-align: center;
  }
 
 .merch_clothing div h3, .merch_music div h3{
