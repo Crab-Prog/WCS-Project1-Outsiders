@@ -1,16 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 html {
     font-family: ROBOTO;
     color: white;
     background-image: url(/assets/img/background.jpg);
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 ul {
     background-color: #1c1c1c;
     display: flex;
     justify-content: space-around;
-    padding: 2rem;
-    font-size: 2em;
+    padding: 0.8rem;
+    font-size: 2rem;
     list-style: none;
+}
+
+li { 
+    display: flex;
+    align-items: center;
+    padding-right: 5rem;
+}
+
+img {
+    max-height: 7rem;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
 a:hover {
@@ -20,23 +44,75 @@ a:hover {
 a {
     text-decoration: none;
     color: white;
-}
-
-div h1 {
-    display: flex;
-    justify-content:center;
-    align-items: center;
-    font-size: 17rem;
+    cursor: pointer;
 }
 
 .contact_us {
-    height: 40rem;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    height: 61rem;
+}
+
+.contact_us h1 {
+    font-size: 12rem;
 }
 
 form {
     justify-content: center;
+    display: block;
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 4rem;
 }
 
-div h2 {
-    padding-left: 10rem;
+div h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+}
+
+input, textarea {
+    margin-top: 2rem;
+    border: 1px solid white;
+    border-radius: 4px;
+    line-height: 1.8rem;
+}
+
+input {
+    width: 15rem;
+}
+
+textarea {
+    width: 30rem;
+    height: 6rem;
+}
+
+input[type="submit"] {
+    color: white;
+    background-color: #1c1c1c;
+    border-radius: 1px;
+    width: 10rem;
+    line-height: 3rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    color: #e6e458;
+    border: 1px solid #e6e458;
+}
+
+.label2 {
+    padding-bottom: 2rem;
+}
+
+iframe {
+    padding-top: 6rem;
+}
+
+footer {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-left: 2rem;
 }
