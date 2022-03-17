@@ -29,20 +29,74 @@ body{
     justify-content: center;
 }
 
+.outsiders_tour, .outsiders_merch{
+    margin : 0 auto;
+}
 
+.tour_presentation, .tour_dates, .merch_clothing, .merch_music{
+    padding : 1em;
+}
+h1{
+    font-size: 2.5em;
+}
 
+.tour_presentation h2, .outsiders_merch h2{
+    padding : 0.8em;
+    font-weight: 700;
+}
 
+.tour_presentation p{
+    padding : 0.8em;
+    line-height: 1em;
+    font-size: 1.2em;
+}
+
+ .tour_presentation p:nth-child(4){
+    font-weight: 700;
+ }
+
+ .tour_dates div{
+    padding : 0.2em;
+    font-size: 1.1em;
+    margin-bottom: 1.2em;
+ }
+
+ .tour_dates div h3,input{
+    padding : 0.4em;
+ }
+
+.merch_clothing div h3, .merch_music div h3{
+    padding : 0.4em;
+    font-size: 1.3em;
+}
+
+.merch_clothing div, .merch_music div{
+    margin-bottom: 2em;
+}
 
 
 
     
 @media screen and (min-width: 768px){ /* limite à partir de laquelle s'applique et au delà*/
    
-.merch_music, .merch_clothing{
-    flex-direction: row;
-}    
+    .tour_dates,.tour_dates div,.merch_music, .merch_clothing{
+        flex-direction: row;
+    }    
     
+    h1{
+        font-size: 4em;
+    }
+        
+    .tour_dates div{
+        padding : 1em;
+        font-size: 1em;
 
-    
+    }
+
+    .merch_clothing div, .merch_music div{
+        padding: 2em;
+        font-size: 1em;
+    }
+
 
 }
