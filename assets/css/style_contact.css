@@ -1,0 +1,42 @@
+html {
+    font-family: ROBOTO;
+    color: white;
+    background-image: url(/assets/img/background.jpg);
+}
+
+ul {
+    background-color: #1c1c1c;
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+    font-size: 2em;
+    list-style: none;
+}
+
+a:hover {
+    color: #e6e458;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+div h1 {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    font-size: 17rem;
+}
+
+.contact_us {
+    height: 40rem;
+}
+
+form {
+    justify-content: center;
+}
+
+div h2 {
+    padding-left: 10rem;
+}
