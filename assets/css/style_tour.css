@@ -41,55 +41,65 @@ body{
 }
 
 .outsiders_tour, .outsiders_merch{
-    margin : 0 auto;
+    margin : 3rem auto;
 }
 
 .tour_presentation, .tour_dates, .merch_clothing, .merch_music{
-    padding : 1em;
+    padding : 1rem;
 }
 
 h1{
-    font-size: 4em;
+    font-size: 3rem;
     text-align: center;
 }
 
 .tour_presentation h2, .outsiders_merch h2{
-    padding : 0.8em;
-    font-size: 2em;
+    padding : 0.8rem;
+    font-size: 2rem;
     font-weight: 900;
     text-align: center;
 }
 
 .tour_presentation p{
-    padding : 0.8em;
-    line-height: 1em;
-    font-size: 1.2em;
+    padding : 0.8rem;
+    line-height: 1.5em;
+    font-size: var(--font-size-p);
+    text-align: center;
 }
 
- .tour_presentation p:nth-child(4){
-    font-weight: 700;
- }
+.tour_presentation p:nth-child(4){
+    font-weight: 900;
+    font-size: 1.4rem;
+}
 
- .tour_dates div{
-    padding : 0.2em;
-    font-size: 1.1em;
-    margin-bottom: 1.2em;
- }
+.tour_dates div{
+    padding : 0.2rem;
+    font-size: 1.1rem;
+    margin-bottom: 1.2rem;
+}
 
- .tour_dates div h3,input{
-    padding : 0.4em;
+.tour_dates div h3,input{
+    padding : 0.4rem;
     text-align: center;
- }
+}
+
+input:hover{
+    background-color : var(--hover);
+    box-shadow: 8px 5px 5px var(--primary-color) ;
+}
 
 .merch_clothing div h3, .merch_music div h3{
-    padding : 0.2em;
-    font-size: 1.3em;
+    padding : 0.2rem;
+    font-size: 1.3rem;
 }
 
 .merch_clothing div, .merch_music div{
-    margin-bottom: 1em;
+    margin-bottom: 1rem;
 }
 
+.merch_clothing div input, .merch_music div input{
+     margin-top: 0.8rem;
+}
 
 
     
@@ -100,18 +110,16 @@ h1{
     }    
     
     h1{
-        font-size: 4em;
-    }
-        
-    .tour_dates div{
-        padding : 1em;
-        font-size: 1em;
-
+        font-size: 5.5rem;
     }
 
-    .merch_clothing div, .merch_music div{
-        padding: 1em;
-        font-size: 1em;
+    .tour_presentation h2, .outsiders_merch h2{
+        font-size: 3rem;
+    }
+
+    .tour_dates div, .merch_clothing div, .merch_music div{
+        padding: 1rem;
+        font-size: 1rem;
     }
 
 
