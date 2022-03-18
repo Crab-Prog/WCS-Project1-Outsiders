@@ -1,7 +1,220 @@
+/*******************/
+/*******************/
+/** ROOT ***********/
+/*******************/
+/*******************/
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 
+}
+
+body {
+    background: url('/assets/img/background.jpg') center center fixed no-repeat;
+}
+
+/*******************/
+/*******************/
+/** NAVBAR *********/
+/*******************/
+/*******************/
+
+.navbar {
+    overflow: hidden;
+    background: #1c1c1c;
+    position: relative;
+    top: 0;
+    position: sticky;
+}
+
+.navbar #links {
+    display: none;
+    height: 100vh;
+    background: #4c4c4c;
+}
+
+.navbar img {
+    height: 3rem;
+    margin-top: 0.7rem;
+    margin-left: 1rem;
+    margin-bottom: 0.9rem;
+}
+
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    font-size: 2rem;
+    margin-left: 2rem;
+    padding-top: 2rem;
+    background: #4c4c4c;
+}
+
+.navbar a#icon {
+    background: #1c1c1c;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 1rem;
+}
+
+/*******************/
+/*******************/
+/** HEADER *********/
+/*******************/
+/*******************/
+
+.header {
+    height: 90vh;
+    background: url('/assets/img/background-index.jpg') center center fixed no-repeat;
+}
+
+.title {
+    height: 30rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+
+.arrow-down {
+    opacity: 50%;
+    color: #1c1c1c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8rem;
+    margin-bottom: 0;
+}
+
+.arrow-down i {
+    font-size: 6rem;
+}
+
+
+
+/*******************/
+/*******************/
+/** MAIN ***********/
+/*******************/
+/*******************/
+
+main {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    color: white;
+
+}
+
+main p {
+    margin-top: 2rem;
+}
+
+/*******************/
+/*******************/
+/** NEWS LETTER*****/
+/*******************/
+/*******************/
+
+.newsletter {
+    display: grid;
+    place-items: center;
+}
+
+
+
+.email,
+.button {
+    width: 50%;
+    height: 2rem;
+}
+
+.email {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0);
+    border-color: rgba(255, 255, 255, 0.397);
+    border-style: solid;
+    height: 3rem;
+}
+
+.button {
+    height: 3rem;
+    margin-top: 1rem;
+}
+
+/*******************/
+/*******************/
+/** GALERY *********/
+/*******************/
+/*******************/
+
+.small-gallery {
+    margin-top: 2rem;
+}
+
+.small-gallery img {
+
+    width: 100vw;
+    height: auto;
+}
+
+/*******************/
+/*******************/
+/** FOOTER *********/
+/*******************/
+/*******************/
+
+.copyright {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    color: white;
+    font-size: 0.60rem;
+}
+
+footer {
+    margin-bottom: 4rem;
+}
+
+
+/*******************/
+/*******************/
+/** PLAYER *********/
+/*******************/
+/*******************/
+
+#player {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #1c1c1c;
+    height: 4rem;
+    color: white;
+}
+
+#player {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#player i {
+    padding: 0 1rem 0 1rem;
+}
+
+.titlesong {
+    margin-left: 4rem;
 }
