@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,400;0,700;1,200;1,600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --primary-color : rgb(76,76,76);
+    --main-background : rgb(28,28,28);
+    --hover : rgb(230,228,88);
+    --white : hsl(0, 0%, 100%);
+    --font-size-p : 1rem;
+    --line-height : 1.5;
+    --font-family : 'Roboto', sans-serif;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+}
+
+body{
+    background-image: url('../img/background.jpg');
+    background-size: cover;
+    color : rgb(224, 216, 216);
+}
+
+.outsiders_tour, 
+.outsiders_merch,
+.tour_presentation, 
+.tour_dates, 
+.merch_clothing, 
+.merch_music,
+.tour_dates div, 
+.merch_clothing div, 
+.merch_music div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.outsiders_tour, .outsiders_merch{
+    margin : 3rem auto;
+}
+
+.outsiders_merch{
+    background-color:var( --primary-color) ;
+}
+
+.tour_presentation, .tour_dates, .merch_clothing, .merch_music{
+    padding : 1rem;
+}
+
+h1{
+    font-size: 3rem;
+    text-align: center;
+}
+
+.tour_presentation h2, .outsiders_merch h2{
+    padding : 0.8rem;
+    font-size: 2rem;
+    font-weight: 900;
+    text-align: center;
+}
+
+.tour_presentation p{
+    padding : 0.8rem;
+    line-height: var( --line-height);
+    font-size: var(--font-size-p);
+    text-align: left;
+}
+
+.tour_presentation p:nth-child(4){
+    font-weight: 900;
+    font-size: 1.4rem;
+}
+
+.tour_dates div{
+    padding : 0.2rem;
+    font-size: 1.1rem;
+    margin-bottom: 1.2rem;
+}
+
+.tour_dates div h3,input{
+    padding : 0.4rem;
+    text-align: center;
+}
+
+.buy_btn:hover{
+    background-color : var(--hover);
+    box-shadow: 8px 5px 5px var(--primary-color) ;
+    cursor : pointer;
+}
+
+.merch_clothing div h3, .merch_music div h3{
+    padding : 0.2rem;
+    font-size: 1.3rem;
+}
+
+.merch_clothing div, .merch_music div{
+    margin-bottom: 1rem;
+}
+
+.merch_clothing div input, .merch_music div input{
+     margin-top: 0.8rem;
+}
+
+
+    
+@media screen and (min-width: 768px){ /* limite à partir de laquelle s'applique et au delà*/
+   
+    .tour_dates,.tour_dates div,.merch_clothing,.merch_music{
+        flex-direction: row;
+    }    
+    
+    h1{
+        font-size: 5.5rem;
+    }
+
+    .tour_presentation h2, .outsiders_merch h2{
+        font-size: 3rem;
+    }
+
+    .tour_dates div, .merch_clothing div, .merch_music div{
+        padding: 1rem;
+        font-size: 1rem;
+    }
+
+
+}
