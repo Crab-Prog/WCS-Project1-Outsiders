@@ -87,7 +87,7 @@ h1{
     text-align: center;
 }
 
-input:hover{
+.buy_btn:hover{
     background-color : var(--hover);
     box-shadow: 8px 5px 5px var(--primary-color) ;
     cursor : pointer;
