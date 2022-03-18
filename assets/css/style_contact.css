@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 html {
@@ -11,7 +12,7 @@ html {
     background-attachment: fixed;
 }
 
-ul {
+/*ul {
     background-color: #1c1c1c;
     display: flex;
     justify-content: space-around;
@@ -49,17 +50,58 @@ a {
     text-decoration: none;
     color: white;
     cursor: pointer;
+} */
+
+.navbar {
+    overflow: hidden;
+    background: #1c1c1c;
+    position: relative;
+    top: 0;
+    position: sticky;
+}
+
+.navbar #links {
+    display: none;
+    height: 100vh;
+    background: #4c4c4c;
+}
+
+.navbar img {
+    height: 3rem;
+    margin-top: 0.7rem;
+    margin-left: 1rem;
+    margin-bottom: 0.9rem;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    font-size: 2rem;
+    margin-left: 2rem;
+    padding-top: 2rem;
+    background: #4c4c4c;
+}
+
+.navbar a#icon {
+    background: #1c1c1c;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 1rem; 
 }
 
 .contact_us {
     display: flex;
     justify-content:center;
     align-items: center;
-    height: 61rem;
+    height: 55rem;
 }
 
 .contact_us h1 {
-    font-size: 6rem;
+    /*font-size: 6rem;*/
+    font-size: clamp(4rem, 12vw, 20rem);
     text-align : center;
 }
 
@@ -75,6 +117,7 @@ div h1 {
     display: flex;
     justify-content: center;
     font-size: 2rem;
+    text-align: center;
 }
 
 input, textarea {
@@ -89,7 +132,7 @@ input {
 }
 
 textarea {
-    width: 30rem;
+    width: clamp(45vw, 25rem, 45vw);
     height: 6rem;
 }
 
@@ -108,16 +151,16 @@ input[type="submit"]:hover {
     border: 1px solid #e6e458;
 }
 
-.label2 {
+.copyright {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2rem;
     padding-bottom: 2rem;
-}
-
-iframe {
-    padding-top: 6rem;
+    color: white;
+    font-size: 0.60rem;
 }
 
 footer {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    margin-left: 2rem;
+    margin-bottom: 4rem;
 }
