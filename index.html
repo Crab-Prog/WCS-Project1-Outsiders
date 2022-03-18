@@ -14,14 +14,67 @@
 </head>
 
 <body>
+    <!-- DEBUT DE LA NAVBAR -->
+    <div class="navbar">
+        <img src="../assets/img/projet1-logo.png" alt="">
 
-    <nav class="header-mobile">
-        <img src="/assets/img/projet1-logo.png" alt="logo">
-        <div class="hamburgerMenu">
-            <i class="fa-solid fa-bars"></i>
+        <div id="links">
+            <a href="#news">Home</a>
+            <a href="#contact">Biography</a>
+            <a href="#about">Discography</a>
+            <a href="#about">Tour</a>
+            <a href="#about">Contact us</a>
         </div>
-    </nav>
+
+        <a href="#" id="icon">
+            <i class="fa-solid fa-bars"></i>
+        </a>
+    </div>
+
+    <!-- FIN DE LA NAVBAR -->
+
+
+    <header class="header">
+        <div class="title">
+            <h1>{out}SIDERS</h1>
+        </div>
+        <div class="arrow-down"><i class="fa-solid fa-chevron-down"></i></div>
+
+    </header>
+
+    <main>
+        <h2>Welcome</h2>
+        <p>{OUT}Siders is a remote electronic rock band from around the world. Appearing on the music scene for so long,
+            the band is composed of Ophelia on drums, Audren on vocals, Kevin on guitar, Guillaume on bass, supported by
+            Christophe's frenzied guitar solos.</p>
+        <p>Don't miss our next news and concert dates near you.</p>
+    </main>
+    <section class="center-newsletter">
+        <form class="newsletter">
+            <input class="email" type="text" value="EMAIL ADRESS">
+            <input class="button" type="button" value="SIGN UP">
+        </form>
+    </section>
+
+    <section class="small-gallery"><img src="./assets/img/pexels-wendy-wei-1916818.jpg" alt=""></section>
+
+    <!-- DEBUT DU FOOTER et PLAYER -->
+
+    <footer>
+        <div class="copyright">© 2022 WILD CODE SCHOOL PRODUCTION</div>
+        <section id="player">
+            <i class="fa-solid fa-play"></i><i class="fa-solid fa-forward-step"></i>
+            <div class="titlesong">{out}Siders - Track 1</div>
+        </section>
+    </footer>
+
+    <!-- FIN DU FOOTER et PLAYER -->
 
 </body>
+
+
+<!-- LIEN DU SCRIPT HAMBURGER -->
+
+<script src="./assets/javascript/hamburger.js"></script>
 
 </html>
