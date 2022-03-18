@@ -44,6 +44,10 @@ body{
     margin : 3rem auto;
 }
 
+.outsiders_merch{
+    background-color:var( --primary-color) ;
+}
+
 .tour_presentation, .tour_dates, .merch_clothing, .merch_music{
     padding : 1rem;
 }
@@ -62,9 +66,9 @@ h1{
 
 .tour_presentation p{
     padding : 0.8rem;
-    line-height: 1.5em;
+    line-height: var( --line-height);
     font-size: var(--font-size-p);
-    text-align: center;
+    text-align: left;
 }
 
 .tour_presentation p:nth-child(4){
@@ -86,6 +90,7 @@ h1{
 input:hover{
     background-color : var(--hover);
     box-shadow: 8px 5px 5px var(--primary-color) ;
+    cursor : pointer;
 }
 
 .merch_clothing div h3, .merch_music div h3{
