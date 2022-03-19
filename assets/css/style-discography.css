@@ -1,16 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 * {
     color: var(--white);
 }
-
-body {
-    width: 80%;
-    background: url("/assets/img/background.jpg") center center fixed no-repeat ;
-    margin-left: 10%;
-    margin-right: 10%;
-    color: rgb(255,250,250);
-}
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 
 :root {
     --primary-color : rgb(76,76,76);
@@ -22,7 +13,14 @@ body {
     --font-family : 'Roboto', sans-serif;
 }
 
-
+body {
+    width: 80%;
+    background: url("/assets/img/background.jpg") center center fixed no-repeat ;
+    margin-left: 10%;
+    margin-right: 10%;
+    color: rgb(255,250,250);
+    font-family: var(--font-family);
+}
 
 /*Section 1*/
 ul {
@@ -83,13 +81,13 @@ li {
 }
 
 .fa-angle-left{
-    position: absolute;
+    position: fixed;
     margin-top: 65%;
     margin-left: -15%;
 }
 
 .fa-angle-right {
-    position: absolute;
+    position: fixed;
     margin-top: 65%;
     margin-left: 70%;
 }
@@ -102,10 +100,9 @@ li {
 /*Section 2*/
 .album-list{
     background-color: rgba(88,88,88, 0.5 );
-    width: 80%;
+    width: 70%;
     margin-top: 10%;
     margin-left: 10%;
-    display: none;
 }
 
 
@@ -115,8 +112,8 @@ li {
     padding: 0;
     padding-bottom: 20%;
     padding-top: 10%;
-    width: 100%;
     height: auto;
+    width: 100%;
 }
 
 .album-pic {
@@ -124,9 +121,23 @@ li {
 }
 
 .text-album-card {
-width: 60%;
+width: 100%;
 display: flex;
-justify-content: space-around;
+flex-direction: column;
+padding-left: 10%;
+}
+
+#img1,
+#img2,
+#img3,
+#img4 {
+    display: block;
+}
+#image1,
+#image2,
+#image3,
+#image4 {
+    display: none;
 }
 
 @media screen and (max-width : 767px) {
@@ -154,32 +165,26 @@ justify-content: space-around;
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
+
+    .album-list{
+        background-color: rgba(88,88,88, 0.5 );
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .card-picture2{
+        width: 250px;
+        height: 250px;
+    }
+
+    .full-album{
+        padding-bottom: 0%;
+        padding-top: 0%;
+        width: 100%;
+    }
+    .flex {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
 }
-    /*.fa-solid {
-        padding: 10%;
-        font-size: 6rem;
-    }*/
-
-
-/*::-webkit-scrollbar {
-    width: 5px;
-    height: 5px;
-  }
-  ::-webkit-scrollbar-button {
-    width: 2px;
-    height: 2px;
-  }
-  ::-webkit-scrollbar-thumb {
-    background: #454545;
-    border: 81px none #0a0a0a;
-    border-radius: 44px;
-  }
-  ::-webkit-scrollbar-thumb:hover {
-    background: #ffffff;
-  }
-  ::-webkit-scrollbar-thumb:active {
-    background: #484747;
-  }
-  ::-webkit-scrollbar-corner {
-    background: transparent;
-  }
