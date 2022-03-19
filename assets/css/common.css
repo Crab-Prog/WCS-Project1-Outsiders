@@ -1,3 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,400;0,700;1,200;1,600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --primary-color : rgb(76,76,76);
+    --main-background : rgb(28,28,28);
+    --hover : rgb(230,228,88);
+    --white : hsl(0, 0%, 100%);
+    --font-size-p : 1rem;
+    --line-height : 1.5;
+    --font-family : 'Roboto', sans-serif;
+}
 /*******************/
 /*******************/
 /** NAVBAR *********/
@@ -5,44 +16,90 @@
 /*******************/
 
 .navbar {
-    overflow: hidden;
     background: #1c1c1c;
-    position: relative;
     top: 0;
     position: sticky;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    padding-right: 1.5rem;
 }
 
 .navbar #links {
     display: none;
     height: 100vh;
     background: #4c4c4c;
+    position: absolute;
+    left: 0;
+    top: 85px;
+    width: 100%;
+}
+
+.navbar #links.displayed {
+    display: flex;
+    flex-direction: column;
 }
 
 .navbar img {
     height: 3rem;
-    margin-top: 0.7rem;
-    margin-left: 1rem;
-    margin-bottom: 0.9rem;
-}
-
-
+   
+}   
 .navbar a {
-    color: white;
+    color: var(--white);
     text-decoration: none;
     display: block;
     font-size: 2rem;
     margin-left: 2rem;
     padding-top: 2rem;
-    background: #4c4c4c;
 }
 
-.navbar a#icon {
-    background: #1c1c1c;
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 0;
-    padding: 1rem;
+.navbar a.active{
+    color: var(--hover);
+}
+
+.navbar #icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.navbar #icons i{
+    color: var(--white);
+    font-size: 2rem;
+    margin-left: 2rem;
+    cursor: pointer;
+
+}
+
+@media screen and (min-width: 1000px){
+   .navbar #icons #icon{
+       display : none;
+   }
+
+   .navbar #links{
+       display: flex;
+       position: static;
+       flex-direction: row;
+       background: none;
+       height: auto;
+   }
+
+   .navbar #links.displayed {
+       flex-direction: row;
+   }
+
+   .navbar a{
+       font-size: 1.5rem;
+       padding-top: 0;
+   }
+
+   .navbar a:hover{
+       color: var(--hover);
+   }
+    
 }
 
 #socialmedia {
@@ -64,7 +121,7 @@
     justify-content: center;
     padding-top: 2rem;
     padding-bottom: 2rem;
-    color: white;
+    color: var(--white);
     font-size: 0.60rem;
 }
 

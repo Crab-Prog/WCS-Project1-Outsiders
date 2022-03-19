@@ -24,65 +24,6 @@ body{
     color : var(--white);
 }
 
-.navbar {
-    overflow: hidden;
-    background: #1c1c1c;
-    position: relative;
-    top: 0;
-    position: sticky;
-}
-
-.navbar #links {
-    display: none;
-    height: 100vh;
-    background: #4c4c4c;
-}
-
-.navbar img {
-    height: 3rem;
-    margin-top: 0.7rem;
-    margin-left: 1rem;
-    margin-bottom: 0.9rem;
-}
-
-.navbar a {
-    color: var(--white);
-    text-decoration: none;
-    display: block;
-    font-size: 2rem;
-    margin-left: 2rem;
-    padding-top: 2rem;
-    background: #4c4c4c;
-}
-
-.navbar a#icon {
-    background: #1c1c1c;
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 0;
-    padding: 1rem;
-}
-
-.header {
-    height: 90vh;
-    background: url('/assets/img/background-index.jpg') center center fixed no-repeat;
-}
-
-.arrow-down {
-    opacity: 50%;
-    color: #1c1c1c;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 8rem;
-    margin-bottom: 0;
-}
-
-.arrow-down i {
-    font-size: 6rem;
-}
-
 .outsiders_tour, 
 .outsiders_merch,
 .tour_dates, 
@@ -232,7 +173,7 @@ footer {
 }
 
 
-@media screen and (min-width: 1215px){ /* limite à partir de laquelle s'applique et au delà*/
+@media screen and (min-width: 1215px){ 
     .tour_dates {
         flex-wrap: nowrap;
     }
