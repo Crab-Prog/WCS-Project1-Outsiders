@@ -108,7 +108,7 @@ body {
         display: none;
     }
 
-    ul {
+    .desktop_navbar ul {
         list-style-type: none;
         margin: 0;
         padding: 0;
@@ -124,17 +124,17 @@ body {
 
     }
 
-    ul img {
+    .desktop_navbar ul img {
         height: 3rem;
 
     }
 
-    li {
+    .desktop_navbar li {
         float: left;
 
     }
 
-    li a {
+    .desktop_navbar li a {
 
         color: var(--white);
         padding: 21px 16px;
@@ -142,7 +142,7 @@ body {
         transition: 0.7s;
     }
 
-    li a:hover {
+    .desktop_navbar li a:hover {
 
         background-color: var(--black);
         color: var(--yellow);
@@ -154,6 +154,10 @@ body {
 
     .desktop_links {
         margin-right: 15%;
+    }
+
+    header {
+        z-index: 9;
     }
 
 
