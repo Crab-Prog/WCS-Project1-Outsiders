@@ -66,15 +66,10 @@ h1{
     margin-bottom: 3rem;
 }
 
-.tour_presentation p{
+.tour_presentation>p{
     padding : 0.8rem;
     line-height: var( --line-height);
-    font-size: var(--font-size-p);
-}
-
-.tour_presentation p:nth-child(4){
-    font-weight: 900;
-    font-size: 1.4rem;
+    font-size: 1.1rem;
 }
 
 .tour_dates div{
