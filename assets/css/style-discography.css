@@ -3,37 +3,32 @@
     color: var(--white);
 }
 
-:root {
-    --primary-color : rgb(76,76,76);
-    --main-background : rgb(28,28,28);
-    --hover : rgb(230,228,88);
-    --white : hsl(0, 0%, 100%);
-    --font-size-p : 1rem;
-    --line-height : 1.5;
-    --font-family : 'Roboto', sans-serif;
-}
 
-body {
+main {
+    padding: 0.5%;
+    margin-right: 2%;
+    margin-left: 2%;
     background: url("/assets/img/background.jpg") center center fixed no-repeat;
     color: rgb(255,250,250);
     font-family: var(--font-family);
-    padding: 0.5%;
+    line-height: var(--line-height);
 }
 
 /*Section 1*/
 .carousel ul {
+    padding: 1rem 0;
     display: flex;
     overflow-x: scroll;
     overflow-y: hidden;
-    padding: 1rem 0;
     white-space: nowrap;
+    z-index: 2;
 }
 
 .carousel li{
-    padding: 5%;
-    list-style: none;
     width: 100%;
     height: auto;
+    padding: 5%;
+    list-style: none;
     display: flex;
     justify-content: space-between;
 }
@@ -42,10 +37,11 @@ body {
     display: flex;
     flex-direction: column;
     cursor: pointer;
+    overflow: hidden;
 }
 
 h1{
-    margin-top: 20%;
+    margin-top: 10%;
 }
 
 h2 {
@@ -53,29 +49,21 @@ h2 {
     margin-top: 0%;
 }
 
-
-.card-picture {
-    object-fit: cover;
-}
-
+.card-picture,
 .card-picture2 {
     object-fit: cover;
 }
 
+
 .album-card:hover {
     display: block;
-    transition: 0.4s;
+    transition: 0.7s;
     -webkit-transform: scale(1.25);
     -moz-transform:scale(1.25);
     -ms-transform:scale(1.25);
     -o-transform:scale(1.25);
     transform:scale(1.25);
-}
-
-.fa-solid,
-.fa-angle-left,
-.fa-angle-right {
-    display: none;
+    z-index: 1;
 }
 
 /*Section 2*/
@@ -83,6 +71,8 @@ h2 {
     background-color: rgba(88,88,88, 0.5 );
     width: 70%;
     margin-top: 10%;
+    margin-left: 15vw;
+    margin-bottom: 0%;
 }
 
 
@@ -124,19 +114,21 @@ h2 {
     margin-top: 5%;
     padding: 2%;
     color: var(--white);
-    background-color: var(--main-background);
+    background-color: var(--primary-color);
     border-radius:0.12em;
     border: solid var(--white);
     box-sizing: border-box;
     text-decoration:none;
     text-align: center;
     font-size: 2rem;
+    transition: 0.7s;
 }
 
 .button:hover {
-    background-color: var(--hover);
-    color: var(--primary-color);
+    background-color: var(--white);
+    color: var(--black);
     cursor: pointer;
+    z-index: 1;
 }
 
 a {
@@ -155,12 +147,66 @@ a {
 }
 
 @media screen and (min-width : 768px) {
-    body {
+    main {
         margin-left: 10%;
         margin-right: 10%;
     }
-    
-    
+
+    .carousel li {
+        width: 100%;
+    }
+
+    .album-list section{
+        background-color: rgba(88,88,88, 0.5 );
+        width: 60%;
+        display: flex;
+        justify-content: space-between;
+        height: 40vh;
+    }
+    .items {
+        z-index: 2;
+    }
+
+    h1,
+    button{
+        margin-left: 10%;
+    }
+
+    .text-album-card{
+        margin-left: 20%;
+    }
+
+    .card-picture2{
+        width: 250px;
+        height: 250px;
+        margin-left: 15%;
+    }
+
+    .full-album{
+        width: 40vw;
+    }
+
+    .flex {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        
+    }
+
+    ::-webkit-scrollbar{
+        width: 2px;
+        height: 10px;
+    }
+    ::-webkit-scrollbar-thumb{
+        background: var(--main-background);
+        border: solid var(--white) 1px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+        border: solid var(--hover) 1px;
+    }
+}
+
+
+
     /*.fa-solid {
         opacity: 50%;
         background-color: var(--white);
@@ -169,45 +215,16 @@ a {
         font-size: 2rem;
         cursor: pointer;
     }
-
     .fa-angle-left{
         position: fixed;
         margin-top: 35vh;
         margin-left: 0vw;
     }
-
     .fa-angle-right {
         position: fixed;
         margin-top: 35vh;
         margin-left: 80vw;
     }
-
     .fa-solid:hover {
         background-color: var(--hover);
     }*/
-
-
-    .carousel li {
-        width: 100%;
-    }
-
-    .album-list{
-        background-color: rgba(88,88,88, 0.5 );
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .card-picture2{
-        width: 250px;
-        height: 250px;
-    }
-
-    .full-album{
-        width: 50vw;
-    }
-    .flex {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
-}
