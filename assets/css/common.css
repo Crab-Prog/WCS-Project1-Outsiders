@@ -94,6 +94,9 @@ body {
     display: none;
 }
 
+#icon i:last-child {
+    padding-left: 2rem;
+}
 
 
 
@@ -156,9 +159,14 @@ body {
         margin-right: 15%;
     }
 
+
+
+
+
     header {
         z-index: 9;
     }
+
 
 
 }
