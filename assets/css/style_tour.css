@@ -39,7 +39,7 @@ body{
 }
 
 .outsiders_tour, .outsiders_merch{
-    margin : 4rem 6rem;
+    margin : 4rem 2rem;
 }
 
 .outsiders_merch{
@@ -165,6 +165,10 @@ footer {
         width: 200px;
         height: 200px;
     }
+
+    .outsiders_tour, .outsiders_merch{
+        margin : 4rem 6rem;
+    }
 }
 
 
@@ -180,5 +184,9 @@ footer {
     .outsiders_merch img {
         width: 350px;
         height: 350px;
+    }
+
+    .outsiders_tour, .outsiders_merch{
+        margin : 4rem 2.6rem;
     }
 }
