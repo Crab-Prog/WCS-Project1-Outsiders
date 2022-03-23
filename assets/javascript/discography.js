@@ -1,50 +1,36 @@
-
 let img1 = document.getElementById("img1");
 let img2 = document.getElementById("img2");
 let img3 = document.getElementById("img3");
+let img4 = document.getElementById("img4");
 let image1 = document.getElementById("image1");
 let image2 = document.getElementById("image2");
 let image3 = document.getElementById("image3");
+let image4 = document.getElementById("image4");
 
-img1.addEventListener("mouseover", () => {
-  if (getComputedStyle(img1).display != "none")
-  {image1.style.display === "none";}
-  else { image1.style.display = "block";}
-})
+ img1.addEventListener("click", function() {
+  image1.style.display = "block";
+  image2.style.display = "none";
+  image3.style.display = "none";
+  image4.style.display = "none";
+});
 
+img2.addEventListener("click", function() {
+  image1.style.display = "none";
+  image2.style.display = "block";
+  image3.style.display = "none";
+  image4.style.display = "none";
+});
 
+img3.addEventListener("click", function() {
+  image1.style.display = "none";
+  image2.style.display = "none";
+  image3.style.display = "block";
+  image4.style.display = "none";
+});
 
-/*const cards = document.querySelector(".cards");
-const fullAlbum = document.querySelector(".full-album");
-
-const albumToChange = [
-    {
-        title: "Smoke in the air",
-        picture: "./img/pic-album-1.jpg"
-      },
-    {
-      title: "Liberty",
-      picture: "./img/pic-album-2.jpg"
-    }
-];
-
-
-function changeCard() {
-    const picture = document.querySelector(".card-picture");
-    fullAlbum.appendChild(picture);
-
-    const album = document.querySelector(".full-album");
-    album.appendChild(albumPic);
-
-    const albumPic = document.querySelector(".album-pic");
-    albumPic.appendChild(picture);
-};
-
-for (let i = 0; i < changeCard.length; i++) {
-  if ( i = 0){
-    changeCard();
-  } 
-  else ( console.log("click somewhere"));
-
-  picture.addEventListener("click", event => {
-    albumPic.innerHTML = function changeCard(albumToChange[0].title,albumToChange[0].picture)};
+img4.addEventListener("click", function() {
+  image1.style.display = "none";
+  image2.style.display = "none";
+  image3.style.display = "none";
+  image4.style.display = "block";
+});
