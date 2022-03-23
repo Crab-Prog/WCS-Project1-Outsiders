@@ -14,24 +14,62 @@
 <body>
     
     <header>
-       <!-- DEBUT DE LA NAVBAR -->
-       <div class="navbar">
-        <img src="../projet-1-groupe-1/assets/img/projet1-logo.png" alt="">
+     <!-- DEBUT DE LA NAVBAR -->
+    <!-- NAVBAR MOBILE -->
 
-        <div id="links">
-            <a href="index.html">Home</a>
-            <a href="biographie.html">Biography</a>
-            <a href="discography.html">Discography</a>
-            <a href="tour.html" class="active">{Tour}</a>
-            <a href="contact.html">Contact us</a>
+    <div class="mobile_navbar">
+
+        <div class="navbar">
+            <img src="./assets/img/projet1-logo.png" alt="logo outsider">
+
+            <div id="links">
+
+                <a href="index.html">Home</a>
+                <a href="contact.html">Biography</a>
+                <a href="discography.html">Discography</a>
+                <a href="tour.html">Tour</a>
+                <a href="contact.html">Contact us</a>
+
+                <div id="socialmedia">
+
+                    <a href="index.html"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="index.html"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="index.html"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="index.html"><i class="fa-brands fa-spotify"></i></a>
+
+                </div>
+            </div>
+
+
+            <a href="#" id="icon">
+                <i class="fa-solid fa-bars"></i>
+            </a>
         </div>
-
-        <a href="#" id="icon">
-            <i class="fa-solid fa-bars"></i>
-        </a>
     </div>
 
-    <!-- FIN DE LA NAVBAR -->
+    <!-- NAVBAR DESKTOP -->
+
+
+    <div class="desktop_navbar">
+
+
+        <ul>
+
+
+            <div class="desktop_logo">
+                <img src="./assets/img/projet1-logo.png" alt="logo outsider">
+            </div>
+
+            <div class="desktop_links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Biography</a></li>
+                <li><a href="#">Discography</a></li>
+                <li><a href="#">Tour</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </div>
+        </ul>
+    </div>
+<!-- FIN DE LA NAVBAR -->
     </header>
     <h1 class="titrePage">{BIO}GRAPHY</h1>
     <article >
@@ -64,7 +102,7 @@
     <section>
         
         <div class="bioBloc1Outsider">
-            <img class="bioGrp" src="assets/img/homme1.jpg"alt="logo"> 
+            <img class="bioGrp" src="assets/img/christophe.jpg"alt="Christophe du groupe Outsider"> 
                 <div class="titreAndP">
                     <h2 class="bioGrpOutsider">CHRISTOPHE</h2>
                     <p>
@@ -88,7 +126,7 @@
     </section>
     <section>
         <div class="bioBloc1Outsider">
-            <img class="bioGrp" src="assets/img/homme1.jpg"alt="logo"> 
+            <img class="bioGrp" src="assets/img/audren.jpg"alt="logo"> 
             <div class="titreAndP">
                 <h2 class="bioGrpOutsider">AUDREN</h2>
                 <p>
@@ -100,7 +138,7 @@
     </section>
     <section>
         <div class="bioBloc2Outsider">
-            <img class="bioGrp" src="assets/img/homme1.jpg"alt="logo"> 
+            <img class="bioGrp" src="assets/img/guillaume.jpg"alt="guillaume du groupe Outsdier"> 
             <div class="titreAndP">
                 
                 <h2 class="bioGrpOutsider">GUILLAUME</h2>
@@ -113,13 +151,32 @@
     </section>
 </article>
     <footer>
+        <!-- DEBUT DU FOOTER et PLAYER -->
+
+
+
+   
+
+        <div class="socialmedia_desktop">
+
+            <a href="index.html"><i class="fa-brands fa-twitter"></i></a>
+            <a href="index.html"><i class="fa-brands fa-instagram"></i></a>
+            <a href="index.html"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="index.html"><i class="fa-brands fa-spotify"></i></a>
+
+        </div>
+
         <div class="copyright">© 2022 WILD CODE SCHOOL PRODUCTION</div>
         <section id="player">
             <i class="fa-solid fa-play"></i><i class="fa-solid fa-forward-step"></i>
             <div class="titlesong">{out}Siders - Track 1</div>
         </section>
-        <script src="../projet-1-groupe-1/assets/javascript/hamburger.js"></script>
-        <script src="../projet-1-groupe-1/assets/javascript/biography.js"></script>
     </footer>
+
+    <!-- FIN DU FOOTER et PLAYER -->
+        
+    
 </body>
+<script src="./assets/javascript/hamburger.js"></script>
+        <script src="../projet-1-groupe-1/assets/javascript/biography.js"></script>
 </html>
