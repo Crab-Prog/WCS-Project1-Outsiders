@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/assets/css/style_contact.css">
+    <link rel="stylesheet" href="/assets/css/common.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@100&display=swap" rel="stylesheet">
@@ -19,11 +20,11 @@
         <img src="../assets/img/projet1-logo.png" alt="">
 
         <div id="links">
-            <a href="#news">Home</a>
-            <a href="#contact">Biography</a>
-            <a href="#about">Discography</a>
-            <a href="#about">Tour</a>
-            <a href="#about">Contact us</a>
+            <a href="index.html">Home</a>
+            <a href="biographie.html">Biography</a>
+            <a href="discography.html">Discography</a>
+            <a href="tour.html">Tour</a>
+            <a href="contact.html">Contact us</a>
         </div>
 
         <a href="#" id="icon">
@@ -49,23 +50,23 @@
     <h1>Fill in the form below to contact the band</h1>
     </div>
         <form>
-            <div>
-                <label class="label1" for="firstname">Firstname</label>
+             <div class ="group_input">   
+                 <label class="label1" for="firstname">Firstname</label>
                 <input type="text" name="firstname" id="firstname_input" placeholder="John">
             </div>
-            <div>    
+            <div class ="group_input">
                 <label class="label1" for="lastname">Lastname</label>
                 <input type="text" name="lastname" id="lastname_input" placeholder="Bisham">
-            </div>  
-            <div>
+            </div>
+            <div class ="group_input">
                 <label class="label1" for="email">Email</label>
                 <input type="email" name="email" id="email_input" placeholder="johnbisham@contact.com">
             </div>
-            <div>
+            <div class ="group_input">
                 <label class="label2" for="message">Your message</label>
                 <textarea id="message" name="message"></textarea>
             </div>
-            <div>
+            <div class ="group_input">
                 <input type="submit" value="Send a mail">
             </div>
         </form>
