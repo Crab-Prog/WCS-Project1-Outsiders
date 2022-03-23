@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style_index.css">
+    <link rel="stylesheet" href="./assets/css/common.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
         integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -15,52 +16,115 @@
 
 <body>
     <!-- DEBUT DE LA NAVBAR -->
-    <div class="navbar">
-        <img src="../assets/img/projet1-logo.png" alt="">
 
-        <div id="links">
-            <a href="#news">Home</a>
-            <a href="#contact">Biography</a>
-            <a href="#about">Discography</a>
-            <a href="#about">Tour</a>
-            <a href="#about">Contact us</a>
+    <!-- NAVBAR MOBILE -->
+
+    <div class="mobile_navbar">
+
+        <div class="navbar">
+            <img src="../assets/img/projet1-logo.png" alt="">
+
+            <div id="links">
+
+                <a href="index.html">Home</a>
+                <a href="contact.html">Biography</a>
+                <a href="discography.html">Discography</a>
+                <a href="tour.html">Tour</a>
+                <a href="contact.html">Contact us</a>
+
+                <div id="socialmedia">
+
+                    <a href="index.html"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="index.html"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="index.html"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="index.html"><i class="fa-brands fa-spotify"></i></a>
+
+                </div>
+            </div>
+
+
+            <a href="#" id="icon">
+                <i class="fa-solid fa-bars"></i>
+            </a>
         </div>
-
-        <a href="#" id="icon">
-            <i class="fa-solid fa-bars"></i>
-        </a>
     </div>
 
+    <!-- NAVBAR DESKTOP -->
+
+
+    <div class="desktop_navbar">
+
+
+        <ul>
+
+
+            <div class="desktop_logo">
+                <img src="./assets/img/projet1-logo.png" alt="">
+            </div>
+
+            <div class="desktop_links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Biography</a></li>
+                <li><a href="#">Discography</a></li>
+                <li><a href="#">Tour</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </div>
+        </ul>
+    </div>
     <!-- FIN DE LA NAVBAR -->
 
 
     <header class="header">
         <div class="title">
-            <h1>{out}SIDERS</h1>
+            <h1>{out}Siders</h1>
         </div>
         <div class="arrow-down"><i class="fa-solid fa-chevron-down"></i></div>
 
     </header>
 
     <main>
-        <h2>Welcome</h2>
-        <p>{OUT}Siders is a remote electronic rock band from around the world. Appearing on the music scene for so long,
-            the band is composed of Ophelia on drums, Audren on vocals, Kevin on guitar, Guillaume on bass, supported by
-            Christophe's frenzied guitar solos.</p>
-        <p>Don't miss our next news and concert dates near you.</p>
+        <div class="index_text">
+            <h2>WELCOME</h2>
+            <p>{OUT}Siders is a remote electronic rock band from around the world. Appearing on the music scene for so
+                long,
+                the band is composed of Ophelia on drums, Audren on vocals, Kevin on guitar, Guillaume on bass,
+                supported by
+                Christophe's frenzied guitar solos.</p>
+            <p>Don't miss our next news and concert dates near you.</p>
+        </div>
+
+        <div class="index_img">
+
+        </div>
     </main>
     <section class="center-newsletter">
+        <div class="newsletter_text">
+            <h3>BE THE FIRST TO KNOW ABOUT THE LATEST OUTSIDERS NEWS</h3>
+        </div>
         <form class="newsletter">
             <input class="email" type="text" value="EMAIL ADRESS">
-            <input class="button" type="button" value="SIGN UP">
+            <div class="button">SIGN UP</div>
         </form>
     </section>
 
-    <section class="small-gallery"><img src="./assets/img/pexels-wendy-wei-1916818.jpg" alt=""></section>
+
+
 
     <!-- DEBUT DU FOOTER et PLAYER -->
 
+
+
     <footer>
+
+        <div class="socialmedia_desktop">
+
+            <a href="index.html"><i class="fa-brands fa-twitter"></i></a>
+            <a href="index.html"><i class="fa-brands fa-instagram"></i></a>
+            <a href="index.html"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="index.html"><i class="fa-brands fa-spotify"></i></a>
+
+        </div>
+
         <div class="copyright">© 2022 WILD CODE SCHOOL PRODUCTION</div>
         <section id="player">
             <i class="fa-solid fa-play"></i><i class="fa-solid fa-forward-step"></i>
