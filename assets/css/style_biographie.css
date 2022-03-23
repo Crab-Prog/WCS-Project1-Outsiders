@@ -33,52 +33,7 @@ body{
 /*******************/
 /*******************/
 
-.navbar {
-    overflow: hidden;
-    background: #1c1c1c;
-    position: relative;
-    top: 0;
-    position: sticky;
-}
 
-.navbar #links {
-    display: none;
-    height: 100vh;
-    background: #4c4c4c;
-}
-
-.navbar img {
-    height: 3rem;
-    margin-top: 0.7rem;
-    margin-left: 1rem;
-    margin-bottom: 0.9rem;
-}
-
-
-.navbar a {
-    color: white;
-    text-decoration: none;
-    display: block;
-    font-size: 2rem;
-    margin-left: 2rem;
-    padding-top: 2rem;
-    background: #4c4c4c;
-}
-
-.navbar a#icon {
-    background: #1c1c1c;
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 0;
-    padding: 1rem;
-}
-
-#socialmedia {
-    margin-top: 7rem;
-    display: flex;
-
-}
 
 
 /*******************/
@@ -140,8 +95,21 @@ footer {
     text-align: center;
     font-weight: 300;
     font-size: 2rem;
-    margin-bottom: 2rem;
-    margin-top: 2rem;
+    margin-bottom: 5rem;
+    margin-top: 5rem;
+    position: relative;
+    transform: translateY(200px);
+    transition: 1s all ease;
+    
+}
+.titrePage.active{
+    color: white;
+    text-align: center;
+    font-weight: 300;
+    font-size: 2rem;
+    margin-bottom: 5rem;
+    margin-top: 5rem;
+    transform: translateY(0px);
     
 }
 
@@ -196,7 +164,7 @@ body  > article > section:nth-child(n){
 }*/
 .bioGrp{
     width: 100%;
-    padding: 10px;
+    padding: 20px;
     background-color: #1c1c1c;
 }
 .titreAndP{
@@ -205,10 +173,30 @@ body  > article > section:nth-child(n){
 }
 .bioBloc2Outsider{
     margin-bottom: 4rem;
+    position: relative;
+    transform: translateX(-15%);
+    opacity: 0;
+    transition: 1s all ease;
     }
+.bioBloc2Outsider.active{
+      
+    margin-bottom: 4rem;
+    transform: translateX(0px);
+    opacity: 1;
+    }    
 .bioBloc1Outsider{
       
     margin-bottom: 4rem;
+    position: relative;
+    transform: translateX(15%);
+    opacity: 0;
+    transition: 1s all ease;
+}
+.bioBloc1Outsider.active{
+      
+    margin-bottom: 4rem;
+    transform: translateX(0px);
+    opacity: 1;
 }
 
 /********** media supp 768 case article ***********/
@@ -249,8 +237,36 @@ body  > article > section:nth-child(n){
             scroll-snap-align: start;
         }  
         .bioGrp {
-            width: 40%;
-        }      
+           width:initial;
+        } 
+        .bioBloc2Outsider{
+            margin-bottom: 4rem;
+            position: relative;
+            transform: translateX(-30%);
+            opacity: 0;
+            transition: 1.5s all ease;
+            }
+        .bioBloc2Outsider.active{
+              
+            margin-bottom: 4rem;
+            transform: translateX(0px);
+            opacity: 1;
+            }    
+        .bioBloc1Outsider{
+              
+            margin-bottom: 4rem;
+            position: relative;
+            transform: translateX(30%);
+            opacity: 0;
+            transition: 1.5s all ease;
+        }
+        .bioBloc1Outsider.active{
+              
+            margin-bottom: 4rem;
+            transform: translateX(0px);
+            opacity: 1;
+        }
+             
 }
 /************************/
 .scroller {
