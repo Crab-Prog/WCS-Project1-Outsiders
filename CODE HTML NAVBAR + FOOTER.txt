@@ -1,22 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
+De la ligne 5 à la ligne 60 se trouve la navbar
+De la ligne 64 à 86 se trouve le footer (réseau sociaux + player)
+De la ligne 91 à 92 se trouve le lien du script JS pour le menu Hamburger
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/style_index.css">
-    <link rel="stylesheet" href="./assets/css/common.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
-        integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <title>Outsiders - Official Website</title>
-</head>
-
-<body>
-    <!-- DEBUT DE LA NAVBAR -->
-
+<!-- DEBUT DE LA NAVBAR -->
     <!-- NAVBAR MOBILE -->
 
     <div class="mobile_navbar">
@@ -71,46 +57,11 @@
             </div>
         </ul>
     </div>
-    <!-- FIN DE LA NAVBAR -->
+<!-- FIN DE LA NAVBAR -->
 
+---------------------------------------------------------------------------
 
-    <header class="header">
-        <div class="title">
-            <h1>{out}Siders</h1>
-        </div>
-        <div class="arrow-down"><i class="fa-solid fa-chevron-down"></i></div>
-
-    </header>
-
-    <main>
-        <div class="index_text">
-            <h2>WELCOME</h2>
-            <p>{OUT}Siders is a remote electronic rock band from around the world. Appearing on the music scene for so
-                long,
-                the band is composed of Ophelia on drums, Audren on vocals, Kevin on guitar, Guillaume on bass,
-                supported by
-                Christophe's frenzied guitar solos.</p>
-            <p>Don't miss our next news and concert dates near you.</p>
-        </div>
-
-        <div class="index_img">
-
-        </div>
-    </main>
-    <section class="center-newsletter">
-        <div class="newsletter_text">
-            <h3>BE THE FIRST TO KNOW ABOUT THE LATEST OUTSIDERS NEWS</h3>
-        </div>
-        <form class="newsletter">
-            <input class="email" type="text" value="EMAIL ADRESS">
-            <div class="button">SIGN UP</div>
-        </form>
-    </section>
-
-
-
-
-    <!-- DEBUT DU FOOTER et PLAYER -->
+<!-- DEBUT DU FOOTER et PLAYER -->
 
 
 
@@ -138,7 +89,5 @@
 
 
 <!-- LIEN DU SCRIPT HAMBURGER -->
-
 <script src="./assets/javascript/hamburger.js"></script>
 
-</html>

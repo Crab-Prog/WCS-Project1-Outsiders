@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="./assets/css/common.css">
     <link rel="stylesheet" href="./assets/css/style-discography.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -14,6 +15,25 @@
 
 
 <body>
+    <a href="#img3"><i class="fa-solid fa-angle-left"></i></a>
+    <a href="#img4"><i class="fa-solid fa-angle-right"></i></a>
+    
+    <div class="navbar">
+        <img src="../assets/img/projet1-logo.png" alt="">
+
+        <div id="links">
+            <a href="index.html">Home</a>
+            <a href="biographie.html">Biography</a>
+            <a href="discography.html">Discography</a>
+            <a href="tour.html">Tour</a>
+            <a href="contact.html">Contact us</a>
+        </div>
+
+        <a href="#" id="icon">
+            <i class="fa-solid fa-bars"></i>
+        </a>
+    </div>
+
     <h1>Discography</h1>
   
 
@@ -36,8 +56,8 @@
                     <img src="assets/img/pic-album-3.jpg" class="card-picture" id="img3" width="250" height="250">
                     <h2>New wave</h2>
                 </div>
-            </li>
 
+            </li>
             <li class="carousel-items">
                 <div class="album-card">
                     <img src="assets/img/pic-album-4.jpg" class="card-picture" id="img4" width="250" height="250">
@@ -53,8 +73,7 @@
                 <img src="assets/img/pic-album-1.jpg" class="card-picture id="image1" width="250px" height="250px">
                 <div class="text-album-card">
                     <h3>Smoke is in the air</h3>
-                    <p>1.le titre <br>
-                        2. le titre<br>
+                    <p>1. Intro <br>2. Better tomorrow<br> 3. I need a cigarette<br> 4. My coffee friend
                     </p>
                 </div>
             </div>
@@ -78,7 +97,18 @@
             </div>
         </div>
     </section>
-    <script src="./assets/discography.js"></script>
+<button type="button" class="button">Buy an album</button>
+
+    <footer>
+        <div class="copyright">© 2022 WILD CODE SCHOOL PRODUCTION</div>
+        <section id="player">
+            <i class="fa-solid fa-play"></i><i class="fa-solid fa-forward-step"></i>
+            <div class="titlesong">{out}Siders - Track 1</div>
+        </section>
+    </footer>
 </body>
+
+<script src="./assets/javascript/hamburger.js"></script>
+<script src="./assets/javascript/discography.js"></script>
 
 </html>
