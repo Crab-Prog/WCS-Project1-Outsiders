@@ -4,5 +4,9 @@ boutonJS.addEventListener("click", hamburger)
 
 function hamburger() {
     const menu = document.getElementById("links");
-    menu.classList.toggle('displayed');
+    if (menu.style.display === "block") {
+        menu.style.display = "none";
+    } else {
+        menu.style.display = "block";
+    }
 }
