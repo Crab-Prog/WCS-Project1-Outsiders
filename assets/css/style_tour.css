@@ -39,11 +39,11 @@ body{
 }
 
 .outsiders_tour, .outsiders_merch{
-    margin : 3rem auto;
+    margin : 4rem 8rem;
 }
 
 .outsiders_merch{
-    background-color:var( --primary-color) ;
+    background-color:var( --primary-color);
 }
 
 .tour_presentation, .tour_dates, .merch_clothing, .merch_music{
@@ -66,15 +66,10 @@ h1{
     margin-bottom: 3rem;
 }
 
-.tour_presentation p{
+.tour_presentation>p{
     padding : 0.8rem;
     line-height: var( --line-height);
-    font-size: var(--font-size-p);
-}
-
-.tour_presentation p:nth-child(4){
-    font-weight: 900;
-    font-size: 1.4rem;
+    font-size: var( --font-size-p)
 }
 
 .tour_dates div{
@@ -84,7 +79,7 @@ h1{
 }
 
 .tour_dates div h3,input{
-    padding : 0.4rem;
+    padding : 0.5rem;
     text-align: center;
 }
 
@@ -93,13 +88,9 @@ h1{
 }
 
 .buy_btn:hover{
-    background-color : var(--hover);
-    box-shadow: 5px 5px 5px var(--primary-color) ;
+    border-style: solid;
+    border-color: var(--hover) ;
     cursor : pointer;
-}
-
-.outsiders_merch .buy_btn:hover {
-    box-shadow: 5px 5px 5px var(--main-background) ;
 }
 
 .merch_clothing div h3, .merch_music div h3{

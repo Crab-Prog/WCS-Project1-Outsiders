@@ -63,6 +63,7 @@ h2 {
     -ms-transform:scale(1.25);
     -o-transform:scale(1.25);
     transform:scale(1.25);
+    z-index: 1;
 }
 
 /*Section 2*/
