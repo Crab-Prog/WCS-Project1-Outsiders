@@ -38,7 +38,7 @@ main {
 }
 
 h1{
-    margin-top: 20%;
+    margin-top: 10%;
 }
 
 h2 {
@@ -126,6 +126,7 @@ h2 {
     background-color: var(--white);
     color: var(--black);
     cursor: pointer;
+    z-index: 1;
 }
 
 a {
@@ -144,12 +145,64 @@ a {
 }
 
 @media screen and (min-width : 768px) {
-    body {
+    main {
         margin-left: 10%;
         margin-right: 10%;
     }
-    
-    
+
+    .carousel li {
+        width: 100%;
+    }
+
+    .album-list section{
+        background-color: rgba(88,88,88, 0.5 );
+        width: 60%;
+        display: flex;
+        justify-content: space-between;
+        height: 40vh;
+    }
+
+    h1,
+    button,
+    .full-album{
+        margin-left: 10%;
+    }
+
+    .text-album-card{
+        margin-left: 15%;
+    }
+
+    .card-picture2{
+        width: 250px;
+        height: 250px;
+        margin-left: 15%;
+    }
+
+    .full-album{
+        width: 50vw;
+    }
+
+    .flex {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        
+    }
+
+    ::-webkit-scrollbar{
+        width: 2px;
+        height: 10px;
+    }
+    ::-webkit-scrollbar-thumb{
+        background: var(--main-background);
+        border: solid var(--white) 1px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+        border: solid var(--hover) 1px;
+    }
+}
+
+
+
     /*.fa-solid {
         opacity: 50%;
         background-color: var(--white);
@@ -174,46 +227,3 @@ a {
     .fa-solid:hover {
         background-color: var(--hover);
     }*/
-
-
-    .carousel li {
-        width: 100%;
-    }
-
-    .album-list section{
-        background-color: rgba(88,88,88, 0.5 );
-        width: 60%;
-        display: flex;
-        justify-content: space-between;
-        height: 40vh;
-    }
-    .text-album-card{
-        margin-left: 15%;
-    }
-    .card-picture2{
-        width: 250px;
-        height: 250px;
-        margin-left: 15%;
-    }
-
-    .full-album{
-        width: 50vw;
-    }
-
-    .flex {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
-
-    ::-webkit-scrollbar{
-        width: 2px;
-        height: 10px;
-    }
-    ::-webkit-scrollbar-thumb{
-        background: var(--main-background);
-        border: solid var(--white) 1px;
-    }
-    ::-webkit-scrollbar-thumb:hover {
-        border: solid var(--hover) 1px;
-    }
-}
