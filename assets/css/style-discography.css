@@ -14,12 +14,10 @@
 }
 
 body {
-    width: 80%;
-    background: url("/assets/img/background.jpg") center center fixed no-repeat ;
-    margin-left: 10%;
-    margin-right: 10%;
+    background: url("/assets/img/background.jpg") center center fixed no-repeat;
     color: rgb(255,250,250);
     font-family: var(--font-family);
+    padding: 0.5%;
 }
 
 /*Section 1*/
@@ -76,38 +74,17 @@ li {
     transform:scale(1.25);
 }
 
-.fa-solid {
-    opacity: 50%;
-    background-color: var(--white);
-    color: #1c1c1c;
-    padding: 0.2rem;
-    font-size: 2rem;
-    cursor: pointer;
-}
-
-.fa-angle-left{
-    position: fixed;
-    margin-top: 35vh;
-    margin-left: 0vw;
-}
-
+.fa-solid,
+.fa-angle-left,
 .fa-angle-right {
-    position: fixed;
-    margin-top: 35vh;
-    margin-left: 80vw;
+    display: none;
 }
-
-.fa-solid:hover {
-    background-color: var(--hover);
-}
-
 
 /*Section 2*/
 .album-list{
     background-color: rgba(88,88,88, 0.5 );
     width: 70%;
     margin-top: 10%;
-    margin-left: 10%;
 }
 
 
@@ -147,13 +124,11 @@ li {
 
 .button {
     margin-top: 5%;
-    margin-left: 24vw;
     padding: 2%;
     color: var(--white);
     background-color: var(--main-background);
     border-radius:0.12em;
     border: solid var(--white);
-    
     box-sizing: border-box;
     text-decoration:none;
     text-align: center;
@@ -163,6 +138,7 @@ li {
 .button:hover {
     background-color: var(--hover);
     color: var(--primary-color);
+    cursor: pointer;
 }
 
 a {
@@ -181,20 +157,40 @@ a {
 }
 
 @media screen and (min-width : 768px) {
-    .fa-solid {
-        display: none;
+    body {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    
+    
+    /*.fa-solid {
+        opacity: 50%;
+        background-color: var(--white);
+        color: #1c1c1c;
+        padding: 0.2rem;
+        font-size: 2rem;
+        cursor: pointer;
     }
 
-    ul {
-        overflow: hidden;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-
+    .fa-angle-left{
+        position: fixed;
+        margin-top: 35vh;
+        margin-left: 0vw;
     }
+
+    .fa-angle-right {
+        position: fixed;
+        margin-top: 35vh;
+        margin-left: 80vw;
+    }
+
+    .fa-solid:hover {
+        background-color: var(--hover);
+    }*/
+
 
     li {
         width: 100%;
-        margin-left: 30%;
     }
 
     .album-list{
@@ -210,8 +206,6 @@ a {
     }
 
     .full-album{
-        padding-bottom: 0%;
-        padding-top: 0%;
         width: 50vw;
     }
     .flex {
