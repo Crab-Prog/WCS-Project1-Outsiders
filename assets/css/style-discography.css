@@ -45,8 +45,8 @@ h1{
 }
 
 h2 {
-    text-align: center;
     margin-top: 0%;
+    text-align: center;
 }
 
 .card-picture,
@@ -63,27 +63,25 @@ h2 {
     -ms-transform:scale(1.25);
     -o-transform:scale(1.25);
     transform:scale(1.25);
-    z-index: 1;
+    z-index: 3;
 }
 
 /*Section 2*/
 .album-list{
     background-color: rgba(88,88,88, 0.5 );
-    width: 70%;
+    width: 100%;
     margin-top: 10%;
-    margin-left: 15vw;
-    margin-bottom: 0%;
 }
 
 
 .full-album{
-    display: flex;
-    justify-content: space-around;
+    width: 100%;
+    height: auto;
     padding: 0;
     padding-bottom: 20%;
     padding-top: 10%;
-    height: auto;
-    width: 100%;
+    display: flex;
+    justify-content: space-around;
 }
 
 .album-pic {
@@ -92,9 +90,9 @@ h2 {
 
 .text-album-card {
     width: 100%;
+    margin-left: 20vh;
     display: flex;
     flex-direction: column;
-    padding-left: 10%;
 }
 
 #img1,
@@ -156,15 +154,10 @@ a {
         width: 100%;
     }
 
-    .album-list section{
+    .album-list{
         background-color: rgba(88,88,88, 0.5 );
-        width: 60%;
         display: flex;
         justify-content: space-between;
-        height: 40vh;
-    }
-    .items {
-        z-index: 2;
     }
 
     h1,
@@ -173,23 +166,23 @@ a {
     }
 
     .text-album-card{
-        margin-left: 20%;
+        margin-left: 30%;
     }
 
     .card-picture2{
         width: 250px;
         height: 250px;
-        margin-left: 15%;
+        margin-left: 10%;
     }
 
     .full-album{
-        width: 40vw;
+        max-width: 60vw;
     }
 
     .flex {
+        margin-left: 10%;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        
     }
 
     ::-webkit-scrollbar{
