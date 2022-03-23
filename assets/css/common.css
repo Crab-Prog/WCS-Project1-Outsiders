@@ -23,10 +23,11 @@ body {
 :root {
     --primary-color: rgb(76, 76, 76);
     --main-background: rgb(28, 28, 28);
-    --hover: rgb(230, 228, 88);
+    --hover: #e6e458;
     --black: #161616;
     --white: hsl(0, 0%, 100%);
     --gray: #bebebe;
+    --yellow: #e0df8d;
     --font-size-p: 1rem;
     --line-height: 1.5;
     --font-family: 'Roboto', sans-serif;
@@ -107,7 +108,7 @@ body {
         display: none;
     }
 
-    ul {
+    .desktop_navbar ul {
         list-style-type: none;
         margin: 0;
         padding: 0;
@@ -123,17 +124,17 @@ body {
 
     }
 
-    ul img {
+    .desktop_navbar ul img {
         height: 3rem;
 
     }
 
-    li {
+    .desktop_navbar li {
         float: left;
 
     }
 
-    li a {
+    .desktop_navbar li a {
 
         color: var(--white);
         padding: 21px 16px;
@@ -141,10 +142,10 @@ body {
         transition: 0.7s;
     }
 
-    li a:hover {
+    .desktop_navbar li a:hover {
 
         background-color: var(--black);
-        color: var(--gray);
+        color: var(--yellow);
     }
 
     .desktop_logo {
@@ -153,6 +154,10 @@ body {
 
     .desktop_links {
         margin-right: 15%;
+    }
+
+    header {
+        z-index: 9;
     }
 
 

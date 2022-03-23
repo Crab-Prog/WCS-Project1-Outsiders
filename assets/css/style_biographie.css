@@ -27,66 +27,7 @@ body{
    /* gap: 10rem;*/
 }
 
-/*******************/
-/*******************/
-/** NAVBAR *********/
-/*******************/
-/*******************/
 
-
-
-
-/*******************/
-/*******************/
-/** FOOTER *********/
-/*******************/
-/*******************/
-
-.copyright {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    color: white;
-    font-size: 0.60rem;
-}
-
-footer {
-    margin-bottom: 4rem;
-}
-
-
-/*******************/
-/*******************/
-/** PLAYER *********/
-/*******************/
-/*******************/
-
-#player {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: #1c1c1c;
-    height: 4rem;
-    color: white;
-}
-
-#player {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-
-#player i {
-    padding: 0 1rem 0 1rem;
-}
-
-.titlesong {
-    margin-left: 4rem;
-}
 
 
 /********************************OUTSIDER*************************************************************************/
@@ -108,7 +49,7 @@ footer {
     font-weight: 300;
     font-size: 2rem;
     margin-bottom: 5rem;
-    margin-top: 5rem;
+    margin-top: 8rem;
     transform: translateY(0px);
     
 }
@@ -117,7 +58,7 @@ footer {
     color: white;
     background-color: #1c1c1c;
     text-align: center;  
-    padding-top: 1rem;
+    padding-top: 2rem;
 }
 
 
@@ -237,7 +178,7 @@ body  > article > section:nth-child(n){
             scroll-snap-align: start;
         }  
         .bioGrp {
-           width:initial;
+           width:30%;
         } 
         .bioBloc2Outsider{
             margin-bottom: 4rem;
