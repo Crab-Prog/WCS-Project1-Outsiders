@@ -41,6 +41,10 @@ ul {
     cursor: pointer;
 }
 
+h1{
+    margin-top: 5%;
+}
+
 h2 {
     text-align: center;
     margin-top: 0%;
@@ -74,26 +78,27 @@ li {
 
 .fa-solid {
     opacity: 50%;
+    background-color: var(--white);
     color: #1c1c1c;
-    padding: 10%;
+    padding: 0.2rem;
     font-size: 2rem;
     cursor: pointer;
 }
 
 .fa-angle-left{
     position: fixed;
-    margin-top: 65%;
-    margin-left: -15%;
+    margin-top: 35vh;
+    margin-left: 0vw;
 }
 
 .fa-angle-right {
     position: fixed;
-    margin-top: 65%;
-    margin-left: 70%;
+    margin-top: 35vh;
+    margin-left: 80vw;
 }
 
 .fa-solid:hover {
-    color: var(--hover);
+    background-color: var(--hover);
 }
 
 
@@ -121,10 +126,10 @@ li {
 }
 
 .text-album-card {
-width: 100%;
-display: flex;
-flex-direction: column;
-padding-left: 10%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10%;
 }
 
 #img1,
@@ -140,6 +145,30 @@ padding-left: 10%;
     display: none;
 }
 
+.button {
+    margin-top: 5%;
+    margin-left: 24vw;
+    padding: 2%;
+    color: var(--white);
+    background-color: var(--main-background);
+    border-radius:0.12em;
+    border: solid var(--white);
+    
+    box-sizing: border-box;
+    text-decoration:none;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.button:hover {
+    background-color: var(--hover);
+    color: var(--primary-color);
+}
+
+a {
+    background-color: transparent;
+}
+
 @media screen and (max-width : 767px) {
 
     .card-picture2{ 
@@ -151,24 +180,26 @@ padding-left: 10%;
     }
 }
 
-@media screen and (min-width : 1200px) {
-    .fa-angle-left{
-       display: none;
-    }
-    
-    .fa-angle-right {
-        display:none;
+@media screen and (min-width : 768px) {
+    .fa-solid {
+        display: none;
     }
 
     ul {
         overflow: hidden;
         display: grid;
         grid-template-columns: 1fr 1fr;
+
+    }
+
+    li {
+        width: 100%;
+        margin-left: 30%;
     }
 
     .album-list{
         background-color: rgba(88,88,88, 0.5 );
-        width: 80%;
+        width: 100%;
         display: flex;
         justify-content: space-between;
     }
@@ -181,7 +212,7 @@ padding-left: 10%;
     .full-album{
         padding-bottom: 0%;
         padding-top: 0%;
-        width: 100%;
+        width: 50vw;
     }
     .flex {
         display: grid;
