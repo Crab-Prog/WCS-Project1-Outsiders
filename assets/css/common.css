@@ -5,52 +5,49 @@
 /*******************/
 
 .navbar {
-    overflow: hidden;
-    background: #1c1c1c;
-    position: relative;
-    top: 0;
-    position: sticky;
+  overflow: hidden;
+  background: #1c1c1c;
+  position: relative;
+  top: 0;
+  position: sticky;
 }
 
 .navbar #links {
-    display: none;
-    height: 100vh;
-    background: #4c4c4c;
+  display: none;
+  height: 100vh;
+  background: #4c4c4c;
 }
 
 .navbar img {
-    height: 3rem;
-    margin-top: 0.7rem;
-    margin-left: 1rem;
-    margin-bottom: 0.9rem;
+  height: 3rem;
+  margin-top: 0.7rem;
+  margin-left: 1rem;
+  margin-bottom: 0.9rem;
 }
 
-
 .navbar a {
-    color: white;
-    text-decoration: none;
-    display: block;
-    font-size: 2rem;
-    margin-left: 2rem;
-    padding-top: 2rem;
-    background: #4c4c4c;
+  color: white;
+  text-decoration: none;
+  display: block;
+  font-size: 2rem;
+  margin-left: 2rem;
+  padding-top: 2rem;
+  background: #4c4c4c;
 }
 
 .navbar a#icon {
-    background: #1c1c1c;
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 0;
-    padding: 1rem;
+  background: #1c1c1c;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 1rem;
 }
 
 #socialmedia {
-    margin-top: 7rem;
-    display: flex;
-
+  margin-top: 7rem;
+  display: flex;
 }
-
 
 /*******************/
 /*******************/
@@ -59,19 +56,18 @@
 /*******************/
 
 .copyright {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    color: white;
-    font-size: 0.60rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  color: white;
+  font-size: 0.6rem;
 }
 
 footer {
-    margin-bottom: 4rem;
+  margin-bottom: 4rem;
 }
-
 
 /*******************/
 /*******************/
@@ -80,28 +76,27 @@ footer {
 /*******************/
 
 #player {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: #1c1c1c;
-    height: 4rem;
-    color: white;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #1c1c1c;
+  height: 4rem;
+  color: white;
 }
 
 #player {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #player i {
-    padding: 0 1rem 0 1rem;
+  padding: 0 1rem 0 1rem;
 }
 
 .titlesong {
-    margin-left: 4rem;
+  margin-left: 4rem;
 }
 
 /**AJOUT DU CSS */

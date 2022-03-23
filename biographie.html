@@ -7,84 +7,119 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 <link rel="stylesheet" media="screen" type="text/css" title="style" href="./assets/css/style_biographie.css"/>
+<link rel="stylesheet" media="screen" type="text/css" title="style" href="./assets/css/common.css"/>
 <script src="https://kit.fontawesome.com/4c61460849.js" crossorigin="anonymous"></script>
 <title>Document</title>
 </head>
 <body>
     
     <header>
-        <nav class="bioNavBar">
-            <img class="bioNavlogo" src="assets/img/projet1-logo.png"alt="logo">
-                <!-- <ul>
-                    <li><a href="">Acceuil</a> </li>
-                    <li><a href="">biographie</a> </li>
-                    <li><a href="">discographie</a> </li>
-                    <li><a href="">tournée</a> </li>
-                    <li><a href="">contact</a> </li>
-                </ul> -->
-                <i class="fa-solid fa-bars"></i>
-        </nav>    
+       <!-- DEBUT DE LA NAVBAR -->
+       <div class="navbar">
+        <img src="../projet-1-groupe-1/assets/img/projet1-logo.png" alt="">
 
+        <div id="links">
+            <a href="index.html">Home</a>
+            <a href="biographie.html">Biography</a>
+            <a href="discography.html">Discography</a>
+            <a href="tour.html" class="active">{Tour}</a>
+            <a href="contact.html">Contact us</a>
+        </div>
+
+        <a href="#" id="icon">
+            <i class="fa-solid fa-bars"></i>
+        </a>
+    </div>
+
+    <!-- FIN DE LA NAVBAR -->
     </header>
+    <h1 class="titrePage">{BIO}GRAPHY</h1>
+    <article >
     <section>
-        <h1>{OUT}SIDER</h1>
-        <div>
-            <!-- <img class="bioGrp1" src="assets/img/projet1-logo.png"alt="logo"> -->
-            <p>
-                orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-            </p>
+        
+        <div class="bioBloc1Outsider">
+            <img class="bioGrp" src="assets/img/homme2.jpg"alt="logo"> 
+                <div class="titreAndP">
+                    <h2 class="bioGrpOutsider">{OUT}SIDER</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a ligula enim. Cras et turpis nunc. Vivamus a congue ipsum. Donec pellentesque est ante, eget facilisis massa elementum dictum. In aliquam maximus sem vitae gravida. Cras accumsan sodales magna, sit amet dapibus massa hendrerit at. Suspendisse potenti. Nam vitae finibus neque. Maecenas nec arcu nulla. Vestibulum a nibh orci nam.
+                    </p>
+                </div>
         </div>
 
     </section>
     <section>
-        <h2>OPHELIE</h2>
-        <div>
-            <!-- <img class="bioGrp" src="assets/img/projet1-logo.png"alt="logo"> -->
-            <p>
-                orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-            </p>
+        <div class="bioBloc2Outsider">
+             <img class="bioGrp" src="assets/img/homme1.jpg"alt="logo"> 
+                <div class="titreAndP">
+                        <h2 class="bioGrpOutsider">OPHELIE</h2>
+                        <p>
+                            orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                        </p>
+                </div>
+        </div>
+
+    </section>
+
+    <section>
+        
+        <div class="bioBloc1Outsider">
+            <img class="bioGrp" src="assets/img/homme1.jpg"alt="logo"> 
+                <div class="titreAndP">
+                    <h2 class="bioGrpOutsider">CHRISTOPHE</h2>
+                    <p>
+                        orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                    </p>
+                </div>    
+        </div>
+
+    </section>
+    <section class="bioKevin">
+        <div class="bioBloc2Outsider">
+            <img class="bioGrp" src="assets/img/homme1.jpg"alt="logo">
+            <div class="titreAndP"> 
+                <h2 class="bioGrpOutsider">KEVIN</h2>
+                    <p>
+                        orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                    </p>
+                </div>  
         </div>
 
     </section>
     <section>
-        <h2>CHRISTOPHE</h2>
-        <div>
-            <!-- <img class="bioGrp" src="assets/img/projet1-logo.png"alt="logo"> -->
-            <p>
-                orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-            </p>
+        <div class="bioBloc1Outsider">
+            <img class="bioGrp" src="assets/img/homme1.jpg"alt="logo"> 
+            <div class="titreAndP">
+                <h2 class="bioGrpOutsider">AUDREN</h2>
+                <p>
+                    orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                </p>
+            </div>      
         </div>
 
     </section>
     <section>
-        <h2>KEVIN</h2>
-        <div>
-            <!-- <img class="bioGrp" src="assets/img/projet1-logo.png"alt="logo"> -->
-            <p>
-                orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-            </p>
+        <div class="bioBloc2Outsider">
+            <img class="bioGrp" src="assets/img/homme1.jpg"alt="logo"> 
+            <div class="titreAndP">
+                
+                <h2 class="bioGrpOutsider">GUILLAUME</h2>
+                <p>
+                    orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                </p>
+            </div>    
         </div>
 
     </section>
-    <section>
-        <h2>AUDREN</h2>
-        <div>
-            <!-- <img class="bioGrp" src="assets/img/projet1-logo.png"alt="logo"> -->
-            <p>
-                orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-            </p>
-        </div>
-
-    </section>
-    <section>
-        <h2>GUILLAUME</h2>
-        <div>
-            <!-- <img class="bioGrp" src="assets/img/projet1-logo.png"alt="logo"> -->
-            <p>
-                orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-            </p>
-        </div>
-
-    </section>
+</article>
+    <footer>
+        <div class="copyright">© 2022 WILD CODE SCHOOL PRODUCTION</div>
+        <section id="player">
+            <i class="fa-solid fa-play"></i><i class="fa-solid fa-forward-step"></i>
+            <div class="titlesong">{out}Siders - Track 1</div>
+        </section>
+        <script src="../projet-1-groupe-1/assets/javascript/hamburger.js"></script>
+        <script src="../projet-1-groupe-1/assets/javascript/biography.js"></script>
+    </footer>
 </body>
 </html>
