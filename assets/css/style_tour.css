@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,400;0,700;1,200;1,600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 :root {
-    --primary-color : rgb(76,76,76);
+    --primary-color : rgb(105, 104, 104);
     --main-background : rgb(28,28,28);
     --hover : rgb(230,228,88);
     --white : hsl(0, 0%, 100%);
@@ -39,11 +39,12 @@ body{
 }
 
 .outsiders_tour, .outsiders_merch{
-    margin : 3rem auto;
+    margin : 4rem 2rem;
 }
 
 .outsiders_merch{
-    background-color:var( --primary-color) ;
+    background-color:var(--primary-color);
+    padding: 2rem;
 }
 
 .tour_presentation, .tour_dates, .merch_clothing, .merch_music{
@@ -66,15 +67,10 @@ h1{
     margin-bottom: 3rem;
 }
 
-.tour_presentation p{
+.tour_presentation>p{
     padding : 0.8rem;
     line-height: var( --line-height);
-    font-size: var(--font-size-p);
-}
-
-.tour_presentation p:nth-child(4){
-    font-weight: 900;
-    font-size: 1.4rem;
+    font-size: var( --font-size-p)
 }
 
 .tour_dates div{
@@ -84,22 +80,21 @@ h1{
 }
 
 .tour_dates div h3,input{
-    padding : 0.4rem;
+    padding : 0.5rem;
     text-align: center;
 }
 
-.buy_btn {
-    transition: box-shadow 0.35s, background-color 0.35s;
+.buy_btn{
+    border-radius:0.15em;
+    border-style: solid;
+    background-color: var(--main-background);
+    color: var( --white);
 }
 
 .buy_btn:hover{
-    background-color : var(--hover);
-    box-shadow: 5px 5px 5px var(--primary-color) ;
+    border-color: var(--hover) ;
     cursor : pointer;
-}
-
-.outsiders_merch .buy_btn:hover {
-    box-shadow: 5px 5px 5px var(--main-background) ;
+    transition: 0.6s;
 }
 
 .merch_clothing div h3, .merch_music div h3{
@@ -167,8 +162,12 @@ footer {
 
 @media screen and (min-width: 950px){ /* limite à partir de laquelle s'applique et au delà*/
     .outsiders_merch img {
-        width: 250px;
-        height: 250px;
+        width: 200px;
+        height: 200px;
+    }
+
+    .outsiders_tour, .outsiders_merch{
+        margin : 4rem 6rem;
     }
 }
 
@@ -185,5 +184,9 @@ footer {
     .outsiders_merch img {
         width: 350px;
         height: 350px;
+    }
+
+    .outsiders_tour, .outsiders_merch{
+        margin : 4rem 2.6rem;
     }
 }
