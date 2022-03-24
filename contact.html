@@ -16,7 +16,7 @@
     <title>Outsiders | Contact Us</title>
 </head>
 <body>
-    <div class="navbar">
+    <!--<div class="navbar">
         <img src="../assets/img/projet1-logo.png" alt="">
 
         <div id="links">
@@ -30,27 +30,70 @@
         <a href="#" id="icon">
             <i class="fa-solid fa-bars"></i>
         </a>
-    </div> 
-    <!-- <header>
-        <nav>
-            <ul>
-                <img src="/assets/img/projet1-logo.png">
+    </div> -->
+    <!-- DEBUT DE LA NAVBAR -->
+    <div class="mobile_navbar">
+
+        <div class="navbar">
+            <img src="../assets/img/projet1-logo.png" alt="">
+
+            <div id="links">
+
+                <a href="index.html">Home</a>
+                <a href="biographie.html">Biography</a>
+                <a href="discography.html">Discography</a>
+                <a href="tour.html">Tour</a>
+                <a href="contact.html">Contact us</a>
+
+                <div id="socialmedia">
+
+                    <a href="index.html"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="index.html"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="index.html"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="index.html"><i class="fa-brands fa-spotify"></i></a>
+
+                </div>
+            </div>
+
+
+            <a href="#" id="icon">
+                <i class="fa-solid fa-bars"></i>
+            </a>
+        </div>
+    </div>
+    <!-- NAVBAR MOBILE -->
+     <!-- NAVBAR DESKTOP -->
+
+
+     <div class="desktop_navbar">
+
+
+        <ul>
+
+
+            <div class="desktop_logo">
+                <img src="./assets/img/projet1-logo.png" alt="">
+            </div>
+
+            <div class="desktop_links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="biographie.html">Biography</a></li>
                 <li><a href="discography.html">Discography</a></li>
                 <li><a href="tour.html">Tour</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
-            </ul>
-        </nav>
-    </header> -->
+            </div>
+        </ul>
+    </div>
+<!-- FIN DE LA NAVBAR -->
     <div class="contact_us">
         <h1>CONTACT&nbsp US</h1>
     </div>
     <div>
     <h1>Fill in the form below to contact the band</h1>
     </div>
-        <form>
-             <div class ="group_input">   
+        <form id="contactForm">
+            <div class="bloc_a">
+                <div class ="group_input">   
                  <label class="label1" for="firstname">Firstname</label>
                 <input type="text" name="firstname" id="firstname_input" placeholder="John">
             </div>
@@ -58,29 +101,59 @@
                 <label class="label1" for="lastname">Lastname</label>
                 <input type="text" name="lastname" id="lastname_input" placeholder="Bisham">
             </div>
+            </div>
+            <div class="bloc_b">
             <div class ="group_input">
                 <label class="label1" for="email">Email</label>
                 <input type="email" name="email" id="email_input" placeholder="johnbisham@contact.com">
             </div>
             <div class ="group_input">
                 <label class="label2" for="message">Your message</label>
-                <textarea id="message" name="message"></textarea>
+                <textarea id="message" name="message" placeholder="Your message..."></textarea>
             </div>
+            </div>
+            <div class="bloc_c">
             <div class="group_input">
-                <input type="checkbox">
-                <label>Check to subscribe to the newsletter </label>
+                <input type="checkbox" id="checkbox">
+                <label for="checkbox">Check to subscribe to the newsletter </label>
             </div>
             <div class ="group_input">
-                <input type="submit" value="Send a mail">
+                <button type="button"data-modal-target="#modal">Send a mail</button>
+                <div class="modal" id="modal">
+                    <div class="modal-header">
+                        <button data-close-button class="close-button">&times;</button>
+                      </div>
+                    <div class="modal-body">
+                      Message sent ! A band member will answer you in the next 48 hours.
+                    </div>
+                  </div>
+                  <div id="overlay"></div>
+            </div>
             </div>
         </form>
+    <!-- DEBUT DU FOOTER et PLAYER -->
+   
+
     <footer>
+
+        <div class="socialmedia_desktop">
+
+            <a href="index.html"><i class="fa-brands fa-twitter"></i></a>
+            <a href="index.html"><i class="fa-brands fa-instagram"></i></a>
+            <a href="index.html"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="index.html"><i class="fa-brands fa-spotify"></i></a>
+
+        </div>
+
         <div class="copyright">© 2022 WILD CODE SCHOOL PRODUCTION</div>
         <section id="player">
             <i class="fa-solid fa-play"></i><i class="fa-solid fa-forward-step"></i>
             <div class="titlesong">{out}Siders - Track 1</div>
         </section>
     </footer>
+
+    <!-- FIN DU FOOTER et PLAYER -->
 </body>
 <script src="./assets/javascript/hamburger.js"></script>
+<script src="./assets/javascript/contact.js"></script>
 </html>
