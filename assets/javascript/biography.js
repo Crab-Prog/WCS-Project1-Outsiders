@@ -57,3 +57,21 @@ function bioBloc1() {
 
 
   
+
+  function bioBloc3() {
+    let titrePage = document.querySelectorAll(".bioBlocGrpDivGlo");
+  
+    for (let i = 0; i < bioBloc3.length; i++) {
+        let windowHeight = window.innerHeight;
+        let elementTop = bioBloc3[i].getBoundingClientRect().top;
+        let elementVisible = 150;
+  
+      if (elementTop < windowHeight - elementVisible) {
+        bioBloc3[i].classList.add("active");
+      } else {
+        bioBloc3[i].classList.remove("active");
+      }
+    }
+  }
+  
+  window.addEventListener("scroll", bioBloc3);
