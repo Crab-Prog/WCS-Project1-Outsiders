@@ -7,8 +7,6 @@
 body {
   color: white;
   background: url("/assets/img/background.jpg") center fixed no-repeat;
-  /*background-size: cover;
-  background-attachment: fixed;*/
 }
 
 .contact_us {
@@ -18,10 +16,11 @@ body {
   min-height: 100vh;
 }
 
-.contact_us>h1 {
+.contact_us > h1 {
   font-size: clamp(4.2rem, 12vw, 20rem);
   text-align: center;
   transform: translate(0, -60%);
+  font-weight: normal;
 }
 
 form {
@@ -100,16 +99,13 @@ input[type="checkbox"] {
   border: 1px solid #ccc;
 }
 
-input[type="checkbox"]+label {
+input[type="checkbox"] + label {
   font-size: 1.2rem;
 }
 
 input[type="checkbox"]:checked {
   background: #e6e458;
 }
-
-
-
 
 @media screen and (min-width: 768px) {
   .bloc_a input {
@@ -142,7 +138,7 @@ input[type="checkbox"]:checked {
     margin-bottom: 8rem;
   }
 
-  .contact_us>h1 {
+  .contact_us > h1 {
     transform: translate(0, -5%);
   }
 }
