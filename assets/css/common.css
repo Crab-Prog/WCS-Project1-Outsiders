@@ -135,6 +135,8 @@ body {
 
     }
 
+
+
     .desktop_navbar ul img {
         height: 3rem;
 
@@ -143,7 +145,9 @@ body {
     .desktop_navbar li {
         float: left;
 
+
     }
+
 
     .desktop_navbar li a {
 
@@ -159,7 +163,13 @@ body {
         color: var(--yellow);
     }
 
+    .desktop_navbar li:last-child {
+        margin-right: 80px;
+    }
 
+    .desktop_navbar>li>a:first-child {
+        margin-left: 40rem;
+    }
 
 
     /* .desktop_logo {
@@ -169,7 +179,14 @@ body {
     .desktop_links {
         margin-right: 15%;
     } */
+    .desktop_navbar li:first-child {
+        padding-right: 10rem;
+    }
 
+
+    .desktop_navbar li:last-child {
+        color: white;
+    }
 
 
 
