@@ -5,13 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/common.css">
-    <link rel="stylesheet" href="./assets/css/style_index.css">
+    <link rel="stylesheet" href="/assets/css/style_contact.css">
+    <link rel="stylesheet" href="/assets/css/common.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@100&display=swap"
+        rel="stylesheet"> -->
+    <link rel="icon" type="image/png" href="/assets/img/projet1-logo.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
         integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <title>Outsiders - Official Website</title>
+    <title>Outsiders | Contact Us</title>
 </head>
 
 <body>
@@ -81,46 +85,53 @@
         </div>
     </div>
     <!-- FIN DE LA NAVBAR -->
-
-
-    <header class="header">
-        <div class="title">
-            <h1>{out}Siders</h1>
+    <div class="contact_us">
+        <h1>CONTACT&nbsp US</h1>
+    </div>
+    <div>
+        <h1 class="form_title">Fill in the form below to contact the band</h1>
+    </div>
+    <form id="contactForm">
+        <div class="bloc_a">
+            <div class="group_input">
+                <label class="label1" for="firstname">Firstname</label>
+                <input type="text" name="firstname" id="firstname_input" placeholder="John">
+            </div>
+            <div class="group_input">
+                <label class="label1" for="lastname">Lastname</label>
+                <input type="text" name="lastname" id="lastname_input" placeholder="Bisham">
+            </div>
         </div>
-        <div class="arrow-down"><i class="fa-solid fa-chevron-down"></i></div>
-
-    </header>
-
-    <main>
-        <div class="index_text">
-            <h2>WELCOME</h2>
-            <p>{OUT}Siders is a remote electronic rock band from around the world. Appearing on the music scene for so
-                long,
-                the band is composed of Ophelia on drums, Audren on vocals, Kevin on guitar, Guillaume on bass,
-                supported by
-                Christophe's frenzied guitar solos.</p>
-            <p>Don't miss our next news and concert dates near you.</p>
+        <div class="bloc_b">
+            <div class="group_input">
+                <label class="label1" for="email">Email</label>
+                <input type="email" name="email" id="email_input" placeholder="johnbisham@contact.com">
+            </div>
+            <div class="group_input">
+                <label class="label2" for="message">Your message</label>
+                <textarea id="message" name="message" placeholder="Your message..."></textarea>
+            </div>
         </div>
-
-        <div class="index_img">
-
+        <div class="bloc_c">
+            <div class="group_input">
+                <input type="checkbox" id="checkbox">
+                <label for="checkbox">Check to subscribe to the newsletter </label>
+            </div>
+            <div class="group_input">
+                <button type="button" data-modal-target="#modal">Send a mail</button>
+                <div class="modal" id="modal">
+                    <div class="modal-header">
+                        <button data-close-button class="close-button">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        Message sent ! A band member will answer you in the next 48 hours.
+                    </div>
+                </div>
+                <div id="overlay"></div>
+            </div>
         </div>
-    </main>
-    <section class="center-newsletter">
-        <div class="newsletter_text">
-            <h3>BE THE FIRST TO KNOW ABOUT THE LATEST OUTSIDERS NEWS</h3>
-        </div>
-        <form class="newsletter">
-            <input class="email" type="text" value="EMAIL ADRESS">
-            <div class="button">SIGN UP</div>
-        </form>
-    </section>
-
-
-
-
+    </form>
     <!-- DEBUT DU FOOTER et PLAYER -->
-
 
 
     <footer>
@@ -142,14 +153,8 @@
     </footer>
 
     <!-- FIN DU FOOTER et PLAYER -->
-
-
-    <!-- LIEN DU SCRIPT HAMBURGER -->
-
-    <script src="./assets/javascript/hamburger.js"></script>
 </body>
-
-
-
+<script src="./assets/javascript/hamburger.js"></script>
+<script src="./assets/javascript/contact.js"></script>
 
 </html>

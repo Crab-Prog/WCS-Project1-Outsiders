@@ -9,4 +9,4 @@ function hamburger() {
     } else {
         menu.style.display = "block";
     }
-}
+} 
