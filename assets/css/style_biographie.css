@@ -43,7 +43,7 @@ body > header{
     margin-top: 5rem;
     position: relative;
     transform: translateY(200px);
-    transition: 1s all ease;
+    transition: 1.5s all ease;
     
     
 }
@@ -86,7 +86,7 @@ body > header{
     width: 100%;
     height: 100%;
     transform: translatex(-2500px);
-    transition: 1s all ease;
+    transition: 1.5s all ease;
 }
 body > article{
     margin-top: 2rem;
@@ -145,7 +145,7 @@ body  > article > section:nth-child(n){
     position: relative;
     transform: translateX(-15%);
     opacity: 0;
-    transition: 1s all ease;
+    transition: 1.5s all ease;
     }
 .bioBloc2Outsider.active{
       
@@ -159,7 +159,7 @@ body  > article > section:nth-child(n){
     position: relative;
     transform: translateX(15%);
     opacity: 0;
-    transition: 1s all ease;
+    transition: 1.5s all ease;
     
 }
 .bioBloc1Outsider.active{
@@ -168,7 +168,9 @@ body  > article > section:nth-child(n){
     transform: translateX(0px);
     opacity: 1;
 }
-
+body > div > div > a{
+    color: white;
+}
 /********** media supp 800 case article ***********/
 @media screen and (min-width : 780px) {
 
