@@ -55,5 +55,23 @@ function bioBloc1() {
   
   window.addEventListener("scroll", titrePage);
 
-
   
+
+
+  function changePage() {
+    let changePage = document.querySelectorAll(".backgroundPage");
+  
+    for (let i = 0; i < changePage.length; i++) {
+        let windowHeight = window.innerHeight;
+        let elementTop = changePage[i].getBoundingClientRect().top;
+        let elementVisible = 150;
+  
+      if (elementTop < windowHeight - elementVisible) {
+        changePage[i].classList.add("active");
+      } else {
+        changePage[i].classList.remove("active");
+      }
+    }
+  }
+  
+  window.addEventListener("scroll", changePage);
