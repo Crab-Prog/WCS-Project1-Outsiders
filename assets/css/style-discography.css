@@ -153,14 +153,12 @@ a {
 
 @media screen and (max-width : 767px) {
 
-    main {
-        background: url("/assets/img/background.jpg") center center fixed no-repeat;
-    }
-
     h1 {
         padding-bottom: 5%;
         padding-top: 10%;
         text-align: center;
+        background: url("/assets/img/concert-disco.jpg") center center fixed no-repeat;
+        width: 100vw;
     }
 
     .card-picture2{ 
