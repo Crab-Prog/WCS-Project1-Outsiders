@@ -5,56 +5,10 @@
 }
 
 body {
-  font-family: ROBOTO;
   color: white;
   background: url("/assets/img/background.jpg") center fixed no-repeat;
   /*background-size: cover;
   background-attachment: fixed;*/
-}
-
-.navbar {
-  overflow: hidden;
-  background: #1c1c1c;
-  position: relative;
-  top: 0;
-  position: sticky;
-}
-
-.navbar #links {
-  display: none;
-  height: 100vh;
-  background: #4c4c4c;
-}
-
-.navbar img {
-  height: 3rem;
-  margin-top: 0.7rem;
-  margin-left: 1rem;
-  margin-bottom: 0.9rem;
-}
-
-.navbar a {
-  color: white;
-  text-decoration: none;
-  display: block;
-  font-size: 2rem;
-  margin-left: 2rem;
-  padding-top: 2rem;
-  background: #4c4c4c;
-}
-
-.navbar a#icon {
-  background: #1c1c1c;
-  display: block;
-  position: absolute;
-  right: 0;
-  top: 0;
-  padding: 1rem;
-}
-
-#socialmedia {
-  margin-top: 7rem;
-  display: flex;
 }
 
 .contact_us {
@@ -64,7 +18,7 @@ body {
   min-height: 100vh;
 }
 
-.contact_us > h1 {
+.contact_us>h1 {
   font-size: clamp(4.2rem, 12vw, 20rem);
   text-align: center;
   transform: translate(0, -60%);
@@ -146,7 +100,7 @@ input[type="checkbox"] {
   border: 1px solid #ccc;
 }
 
-input[type="checkbox"] + label {
+input[type="checkbox"]+label {
   font-size: 1.2rem;
 }
 
@@ -154,19 +108,8 @@ input[type="checkbox"]:checked {
   background: #e6e458;
 }
 
-.copyright {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  color: white;
-  font-size: 0.6rem;
-}
 
-footer {
-  margin-top: 5rem;
-}
+
 
 @media screen and (min-width: 768px) {
   .bloc_a input {
@@ -199,7 +142,7 @@ footer {
     margin-bottom: 8rem;
   }
 
-  .contact_us > h1 {
+  .contact_us>h1 {
     transform: translate(0, -5%);
   }
 }
