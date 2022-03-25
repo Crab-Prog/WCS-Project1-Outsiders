@@ -18,16 +18,19 @@ Point de rupture : 768 px */
   
 }
 body{
-    background-image: url('../img/background.jpg');
+    /* background-image: url('../img/background.jpg'); */
     background-size: cover;
     background-position-x: center;
     background-attachment: fixed;
     display: flex;
     flex-direction: column;
    /* gap: 10rem;*/
+   background-color: black;
 }
 
-
+body > header{
+    z-index: 3;
+}
 
 
 /********************************OUTSIDER*************************************************************************/
@@ -41,6 +44,7 @@ body{
     position: relative;
     transform: translateY(200px);
     transition: 1s all ease;
+    
     
 }
 .titrePage.active{
@@ -61,9 +65,35 @@ body{
     padding-top: 2rem;
 }
 
+.backgroundPage{
+    background-image: url("../img/background-index.jpg");
+    background-position: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: translatex(0px);
+    transition: 1s all ease;
+    display: flex;
+    flex-direction: column-reverse;
+    font-size: 7rem;
+    align-items: center;
+    color: white;
+}
 
-
-
+.backgroundPage.active{
+    background-image: url("../img/background-index.jpg");
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: translatex(-2500px);
+    transition: 1s all ease;
+}
+body > article{
+    margin-top: 2rem;
+}
+.arrow-down{
+    margin-bottom: 1rem;
+}
   
 
 /*********************GLOBAL CORP*************************************************************************************/
@@ -108,6 +138,7 @@ body  > article > section:nth-child(n){
     display: flex;
     flex-direction: column;
     
+    
 }
 .bioBloc2Outsider{
     margin-bottom: 4rem;
@@ -129,6 +160,7 @@ body  > article > section:nth-child(n){
     transform: translateX(15%);
     opacity: 0;
     transition: 1s all ease;
+    
 }
 .bioBloc1Outsider.active{
       
@@ -231,6 +263,9 @@ body  > article > section:nth-child(n){
         }
         body > article > section:nth-child(1) > div > div{
             width: 40%;
+        }
+        .arrow-down{
+            margin-bottom: 5rem;
         }
              
 }

@@ -55,23 +55,23 @@ function bioBloc1() {
   
   window.addEventListener("scroll", titrePage);
 
-
   
 
-  function bioBloc3() {
-    let titrePage = document.querySelectorAll(".bioBlocGrpDivGlo");
+
+  function changePage() {
+    let changePage = document.querySelectorAll(".backgroundPage");
   
-    for (let i = 0; i < bioBloc3.length; i++) {
+    for (let i = 0; i < changePage.length; i++) {
         let windowHeight = window.innerHeight;
-        let elementTop = bioBloc3[i].getBoundingClientRect().top;
+        let elementTop = changePage[i].getBoundingClientRect().top;
         let elementVisible = 150;
   
       if (elementTop < windowHeight - elementVisible) {
-        bioBloc3[i].classList.add("active");
+        changePage[i].classList.add("active");
       } else {
-        bioBloc3[i].classList.remove("active");
+        changePage[i].classList.remove("active");
       }
     }
   }
   
-  window.addEventListener("scroll", bioBloc3);
+  window.addEventListener("scroll", changePage);
