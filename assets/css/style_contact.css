@@ -7,9 +7,9 @@
 body {
   font-family: ROBOTO;
   color: white;
-  background: url("/assets/img/background.jpg");
-  background-size: cover;
-  background-attachment: fixed;
+  background: url("/assets/img/background.jpg") center fixed no-repeat;
+  /*background-size: cover;
+  background-attachment: fixed;*/
 }
 
 .navbar {
@@ -61,12 +61,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: clamp(45rem, 48vw, 52rem);
+  min-height: 100vh;
 }
 
-.contact_us h1 {
+.contact_us > h1 {
   font-size: clamp(4.2rem, 12vw, 20rem);
   text-align: center;
+  transform: translate(0, -60%);
 }
 
 form {
@@ -198,10 +199,11 @@ footer {
     margin-bottom: 8rem;
   }
 
-  div h1 {
-    margin-top: 5rem;
+  .contact_us > h1 {
+    transform: translate(0, -5%);
   }
 }
+
 .modal {
   position: fixed;
   top: 50%;
