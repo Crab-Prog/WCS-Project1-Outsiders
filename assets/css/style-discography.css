@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
 * {
     color: var(--white);
 }
@@ -28,7 +29,7 @@ main {
     z-index: 2;
 }
 
-.carousel li{
+.carousel li {
     width: 80vw;
     height: auto;
     padding: 5%;
@@ -45,9 +46,9 @@ main {
     overflow: hidden;
 }
 
-h1{
+h1 {
     width: 80vw;
-    background-image: url("/assets/img/concert-disco.jpg") center center fixed no-repeat;
+    background-image: url("./assets/img/concert-disco.jpg") center center fixed no-repeat;
     font-weight: 500;
     text-shadow: 2px 2px 20px var(--black);
 }
@@ -69,15 +70,15 @@ h2 {
     transition: 0.7s;
 
     -webkit-transform: scale(1.25);
-    -moz-transform:scale(1.25);
-    -ms-transform:scale(1.25);
-    -o-transform:scale(1.25);
-    transform:scale(1.25);
+    -moz-transform: scale(1.25);
+    -ms-transform: scale(1.25);
+    -o-transform: scale(1.25);
+    transform: scale(1.25);
 }
 
 /*Section 2*/
-.album-list{
-    background-color: rgba(88,88,88, 0.5 );
+.album-list {
+    background-color: rgba(88, 88, 88, 0.5);
 
     width: 90vw;
     margin-top: 10vh;
@@ -85,7 +86,7 @@ h2 {
 }
 
 
-.full-album{
+.full-album {
     width: 100%;
     height: auto;
     padding: 0;
@@ -112,6 +113,7 @@ h2 {
 #img4 {
     display: block;
 }
+
 #image1,
 #image2,
 #image3,
@@ -123,10 +125,10 @@ h2 {
     padding: 2%;
     color: var(--white);
     background-color: var(--primary-color);
-    border-radius:0.12em;
+    border-radius: 0.12em;
     border: solid var(--white);
     box-sizing: border-box;
-    text-decoration:none;
+    text-decoration: none;
     text-align: center;
     font-size: 2rem;
     transition: 0.7s;
@@ -142,14 +144,16 @@ h2 {
     margin: 3vh;
 }
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
     width: 2px;
     height: 10px;
 }
-::-webkit-scrollbar-thumb{
+
+::-webkit-scrollbar-thumb {
     background: var(--main-background);
     border: solid var(--white) 1px;
 }
+
 ::-webkit-scrollbar-thumb:hover {
     border: solid var(--hover) 1px;
 }
@@ -164,22 +168,22 @@ a {
         padding-bottom: 5%;
         padding-top: 10%;
         text-align: center;
-        background: url("/assets/img/concert-disco.jpg") center center fixed no-repeat;
+        background: url("./assets/img/concert-disco.jpg") center center fixed no-repeat;
         width: 99vw;
     }
 
-    .card-picture2{ 
+    .card-picture2 {
         display: none;
     }
 
-    .text-album-card{
+    .text-album-card {
         width: 100%;
     }
 }
 
 @media screen and (min-width : 768px) {
-    .back-img{
-        background: url("/assets/img/concert-disco.jpg") center center fixed no-repeat;
+    .back-img {
+        background: url("./assets/img/concert-disco.jpg") center center fixed no-repeat;
         width: 99vw;
         height: 40vh;
         background-size: cover;
@@ -189,34 +193,36 @@ a {
         width: 80vw;
     }
 
-    .album-list{
+    .album-list {
         width: 60vw;
+
         margin-left: 16vw;
         background-color: rgba(88,88,88, 0.5 );
+
         display: flex;
         justify-content: space-between;
     }
 
-    h1{
+    h1 {
         margin-top: -7%;
         text-align: center;
     }
 
     h1,
-    button{
+    button {
         margin-left: 10%;
     }
 
-    .text-album-card{
+    .text-album-card {
         margin-left: 3vw;
     }
 
-    .card-picture2{
+    .card-picture2 {
         width: 250px;
         height: 250px;
     }
 
-    .full-album{
+    .full-album {
         width: 60vw;
         height: 40vh;
         padding-top: 4vh;
