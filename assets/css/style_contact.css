@@ -6,10 +6,7 @@
 
 body {
   color: white;
-  background: url("./assets/img/background.jpg") center center fixed no-repeat;
-  /*background-size: cover;
-  background-attachment: fixed;*/
-  font-weight: normal;
+  background: url("/assets/img/background.jpg") center fixed no-repeat;
 }
 
 .contact_us {
@@ -23,6 +20,7 @@ body {
   font-size: clamp(4.2rem, 12vw, 20rem);
   text-align: center;
   transform: translate(0, -60%);
+  font-weight: normal;
 }
 
 form {
