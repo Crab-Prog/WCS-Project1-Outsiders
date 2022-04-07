@@ -6,7 +6,7 @@
 
 .header {
     height: 90vh;
-    background: url('./assets/img/background-index.jpg') center center fixed no-repeat;
+    background: url('../img/background-index.jpg') center center fixed no-repeat;
 }
 
 .title {
@@ -40,7 +40,7 @@
 
     .header {
         height: 100vh;
-        background: url('./assets/img/background-index.jpg') center;
+        background: url('../img/background-index.jpg') center;
         background-repeat: no-repeat;
         background-size: cover;
 
@@ -102,7 +102,7 @@ h2 {
 
     .index_img {
         display: unset;
-        background: url("/assets/img/album2.jpg") center center;
+        background: url("../img/album2.jpg") center center;
     }
 
 }
@@ -155,7 +155,7 @@ h2 {
 
 .center-newsletter {
 
-    background-image: url('./assets/img/pexels-wendy-wei-1916818.jpg');
+    background-image: url('../img/pexels-wendy-wei-1916818.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
@@ -186,7 +186,7 @@ h3 {
     .center-newsletter {
 
         min-height: 40rem;
-        background-image: url('./assets/img/pexels-wendy-wei-1916818.jpg');
+        background-image: url('../img/pexels-wendy-wei-1916818.jpg');
         background-repeat: no-repeat;
         background-size: cover;
         background-position: top;
