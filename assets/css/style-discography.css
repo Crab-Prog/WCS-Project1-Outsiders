@@ -48,7 +48,7 @@ main {
 
 h1 {
     width: 80vw;
-    background-image: url("./assets/img/concert-disco.jpg") center center fixed no-repeat;
+    background-image: url("../img/concert-disco.jpg") center center fixed no-repeat;
     font-weight: 500;
     text-shadow: 2px 2px 20px var(--black);
 }
@@ -168,7 +168,7 @@ a {
         padding-bottom: 5%;
         padding-top: 10%;
         text-align: center;
-        background: url("./assets/img/concert-disco.jpg") center center fixed no-repeat;
+        background: url("../img/concert-disco.jpg") center center fixed no-repeat;
         width: 99vw;
     }
 
@@ -183,7 +183,7 @@ a {
 
 @media screen and (min-width : 768px) {
     .back-img {
-        background: url("./assets/img/concert-disco.jpg") center center fixed no-repeat;
+        background: url("../img/concert-disco.jpg") center center fixed no-repeat;
         width: 99vw;
         height: 40vh;
         background-size: cover;
